@@ -237,7 +237,7 @@ const Navbar = () => {
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`w-full md:w-auto  sm:mx-1 ml-3 flex items-center justify-center rounded-full p-1
+              className={`w-6  sm:mx-1 ml-3 flex items-center justify-center rounded-full p-1
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
             >
               {mode === "dark" ? (
