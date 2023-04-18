@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex items-center lg:py-2">
           Built With{" "}
           <span className="text-primary text-2xl px-1 dark:text-primaryDark">
-            &hearts;&#9825;
+            &#9825;
           </span>
           by&nbsp;
           <Link
@@ -18,7 +18,7 @@ const Footer = () => {
             target={"_blank"}
             className="underline underline-offset-2 "
           >
-            HiroNakae
+            Hiro Nakae
           </Link>
         </div>
         <Link

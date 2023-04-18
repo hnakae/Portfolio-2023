@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/assets/hiro.jpg";
 import { useMotionValue, useSpring, useInView } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -55,8 +55,8 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I'm Hiro, a web developer and UI/UX designer with a passion
-                for creating beautiful, functional, and user-centered digital
+                Hi, I'm Hiro, a web developer based in Eugene with a passion for
+                creating beautiful, functional, and user-centered digital
                 experiences. With 4 years of experience in the field. I am
                 always looking for new and innovative ways to bring my clients'
                 visions to life.
