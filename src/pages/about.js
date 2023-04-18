@@ -42,7 +42,7 @@ const about = () => {
         <meta name="description" content="Hironobu Nakae's Portfolio" />
       </Head>
       <TransitionEffect />
-      <main className="flex w-full flex-full flex-col justify-center dark:text-light ">
+      <main className="flex w-full flex-full flex-col justify-center text-dark dark:text-light ">
         <Layout className="pt-0">
           <AnimatedText
             text="Passion Fuels Purpose!"
