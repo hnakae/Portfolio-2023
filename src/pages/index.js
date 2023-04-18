@@ -43,7 +43,7 @@ export default function Home() {
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
-              <div className="flex items-center self-start mt-2 lg:self-center h-auto">
+              <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   href="/dummy.pdf"
                   target={"_blank"}
