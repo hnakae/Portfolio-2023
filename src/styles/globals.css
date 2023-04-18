@@ -16,6 +16,21 @@
   }
 }
 
+/* For iPad portrait */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* styles for iPad portrait */
+}
+
+/* For iPad landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* styles for iPad landscape */
+}
+
+/* For retina display */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* styles for retina display */
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

@@ -5,9 +5,14 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
+import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project2 from "../../public/images/projects/portfolio-cover-image.jpg";
+import project3 from "../../public/images/projects/agency-website-cover-image.jpg";
+import project4 from "../../public/images/projects/fashion-studio-website.jpg";
+import project5 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
+import project6 from "../../public/images/projects/devdreaming.jpg";
 
 const FramerImage = motion(Image);
 
@@ -145,6 +150,19 @@ local currency."
                 github="/"
               />
             </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Crypto Screener Application"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive."
+                link="/"
+                type="Project"
+                img={project4}
+                github="/"
+              />
+            </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"
@@ -152,36 +170,24 @@ local currency."
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
                 link="/"
-                type="Featured Project"
-                img={project1}
+                type="Project"
+                img={project3}
                 github="/"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
-                type="Featured Project"
-                img={project1}
-                github="/"
-              />
-            </div>
+
             <div className="col-span-12">
-              {" "}
               <FeaturedProject
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
+                title="React Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive."
                 link="/"
                 type="Featured Project"
-                img={project1}
+                img={project2}
                 github="/"
               />
             </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"
@@ -189,11 +195,12 @@ local currency."
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
                 link="/"
-                type="Featured Project"
-                img={project1}
+                type="Project"
+                img={project5}
                 github="/"
               />
             </div>
+            
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Crypto Screener Application"
@@ -201,8 +208,8 @@ local currency."
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
                 link="/"
-                type="Featured Project"
-                img={project1}
+                type="Project"
+                img={project6}
                 github="/"
               />
             </div>

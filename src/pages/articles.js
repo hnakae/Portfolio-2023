@@ -24,8 +24,8 @@ const MovingImg = ({ img, title, link }) => {
   const imgRef = useRef(null);
   function handleMouse(event) {
     imgRef.current.style.display = "inline-block";
-    x.set(event.pageX);
-    y.set(-10);
+    x.set(event.pageX - 295);
+    y.set(-300);
   }
   function handleMouseLeave(event) {
     imgRef.current.style.display = "none";
