@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../public/assets/Capture.png";
+import nid from "../../public/assets/Capture.png";
 import { useMotionValue, useSpring, useInView } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -72,7 +72,7 @@ const about = () => {
             <div className="col-span-3 relative h-max rounded-3xl rounded-br-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl " />
               <Image
-                src={profilePic}
+                src={nid}
                 alt="Hironobu"
                 className="w-full h-auto rounded-2xl"
                 priority
