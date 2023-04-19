@@ -114,12 +114,12 @@ const articles = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center over-flow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Words Can Change The World!"
+            text="Exploring Ideas and Trends!"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
             <FeaturedArticle
-              title="Build A Custom Pagination Component In Reactjs From Scratch"
+              title="Fundamentals"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. 
 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
@@ -127,7 +127,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
               img={article1}
             />
             <FeaturedArticle
-              title="Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens"
+              title="Alpha Go Zero"
               summary="Learn how to create stunning loading screens in React with 3 different methods. 
 Discover how to use React-Loading, React-Lottie & build a custom loading screen. 
 Improve the user experience."
@@ -141,38 +141,38 @@ Improve the user experience."
           </h2>
           <ul>
             <Article
-              title="Creating An Efficient Modal Component In React Using Hooks And Portals"
+              title="Modern Joseki"
               img={article3}
               date="March 09, 2023"
               link="/"
             />
             <Article
-              title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title="AI Tactics"
               img={article4}
               date="March 09, 2023"
               link="/"
             />
             <Article
-              title="Silky Smooth Scrolling In Reactjs: A Step-By-Step Guide For React Developers"
+              title="Reduce with double approach attach & aji"
               img={article5}
               date="March 09, 2023"
               link="/"
             />
 
             <Article
-              title="Build A Fabulous Todo List App With React, Redux And Framer-Motion"
+              title="Invade 3 space high"
               img={article6}
               date="March 09, 2023"
               link="/"
             />
             <Article
-              title="Redux Simplified: A Beginner's Guide For Web Developers"
+              title="Enclosure + Extension + Reinforcement"
               img={article7}
               date="March 09, 2023"
               link="/"
             />
             <Article
-              title="What Is Higher Order Component (Hoc) In React?"
+              title="Center Control"
               img={article8}
               date="March 09, 2023"
               link="/"

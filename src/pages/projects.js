@@ -133,14 +133,14 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="From Concept to Creation!"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Productivity App for Go Players"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
@@ -153,7 +153,7 @@ local currency."
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
+                title="Youtube Transcriber App"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive."
                 link="/"
@@ -165,7 +165,7 @@ page transitions, cool background effects, unique design and it is mobile respon
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
+                title="OpenAI API Integration"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
@@ -178,7 +178,7 @@ local currency."
 
             <div className="col-span-12">
               <FeaturedProject
-                title="React Portfolio Website"
+                title="Inventory Management System"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive."
                 link="/"
@@ -190,7 +190,7 @@ page transitions, cool background effects, unique design and it is mobile respon
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
+                title="BadukHub: Content Platform for Go Players"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
@@ -200,10 +200,10 @@ local currency."
                 github="/"
               />
             </div>
-            
+
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
+                title="Quiz Game"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."

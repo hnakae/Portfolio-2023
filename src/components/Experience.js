@@ -53,54 +53,12 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer"
-            company="Google"
+            position="Telephone Interviewer"
+            company="Venture Data LLC"
             companyLink="https://www.google.com/"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://www.google.com/"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://www.google.com/"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://www.google.com/"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://www.google.com/"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            time="2020-2022"
+            address="Eugene, OR"
+            work="Coded customer satisfaction survey responses into proprietary Linux program for business intelligence and data analysis."
           />
         </ul>
       </div>

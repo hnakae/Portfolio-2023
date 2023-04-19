@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Layout from "@/components/Layout";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
@@ -10,7 +8,6 @@ import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import penguin from "../../public/assets/penguin.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -61,7 +58,7 @@ export default function Home() {
           </div>
         </Layout>
 
-        <HireMe text="Hire Me" />
+        <HireMe text="Play!" />
 
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
           <Image src={penguin} alt="HiroNakae" className="w-full h-auto" />
