@@ -7,12 +7,9 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
-import project1 from "../../public/assets/project1.png";
-import project2 from "../../public/images/projects/portfolio-cover-image.jpg";
-import project3 from "../../public/images/projects/agency-website-cover-image.jpg";
-import project4 from "../../public/images/projects/fashion-studio-website.jpg";
-import project5 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import project6 from "../../public/images/projects/devdreaming.jpg";
+import project1 from "../../public/images/projects/example.png";
+import project2 from "../../public/images/projects/example2.png";
+import project3 from "../../public/images/projects/example3.png";
 
 const FramerImage = motion(Image);
 
@@ -24,7 +21,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full "
+        className="w-auto cursor-pointer overflow-hidden rounded-lg lg:w-full "
       >
         <FramerImage
           src={img}
@@ -140,7 +137,7 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="New Paradigm - Type Safe Algorithmic Content Curator"
+                title="New Paradigm - Fully Stacked TypeScript Web Application"
                 summary="A full-stack web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, Prisma, PlanetScale, Cypress, and Clerk.
 "
                 link="https://new-paradigm.vercel.app/"
@@ -152,19 +149,19 @@ const projects = () => {
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Netflix Clone"
+                title="Media Platform: Curated Lessons for Go Players"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive."
                 link="/"
                 type="Project"
-                img={project4}
+                img={project2}
                 github="/"
               />
             </div>
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Twitter Clone"
+                title="AI Dashboard: Algorithmic Data Visualizer"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
@@ -175,7 +172,7 @@ local currency."
               />
             </div>
 
-            <div className="col-span-12">
+            {/* <div className="col-span-12">
               <FeaturedProject
                 title="OpenAI GPT4 App using RapidAPI (Coming Soon)"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
@@ -185,7 +182,7 @@ page transitions, cool background effects, unique design and it is mobile respon
                 img={project2}
                 github="/"
               />
-            </div>
+            </div> */}
 
             {/* <div className="col-span-6 sm:col-span-12">
               <Project
