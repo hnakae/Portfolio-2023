@@ -16,7 +16,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
-// import go from "../../public/assets/go.png";
+import go from "../../public/assets/go.png";
 // import code from "../../public/assets/programming.png";
 
 const AnimatedNumbers = ({ value }) => {
@@ -60,11 +60,11 @@ const about = () => {
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              {/* <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
               <p className="font-medium">
-                <Image src={code} className="w-10" />
+                <Image src={penguin} className="w-10" />
                 Hi, I'm Hiro, a full-stack developer based in Eugene with a
                 passion for building digital experiences on the web.
               </p>
@@ -73,16 +73,16 @@ const about = () => {
                 I'm also a huge fan of baduk (go), a game that has been a part
                 of my life for over a decade now.
               </p>
-              <p className="my-4 font-medium">Content Curator</p> */}
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+
+              {/* <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Quotes
-              </h2>
+              </h2> */}
               <p className="font-medium">
                 Let's have fun! Otherwise, we'll lose. That's how it is. -
                 Bachira
               </p>
 
-              <p className="my-4 font-medium">
+              {/* <p className="my-4 font-medium">
                 From Zero to One: If someone scores a goal, we can build the
                 team structure around it. This is how a team is born. Using that
                 as a guiding principle, a team can evolve into a '10' or even a
@@ -151,8 +151,8 @@ const about = () => {
               </p>
               <p className="my-4 font-medium">
                 Formula = Specialty x Condition = Mass Production of Goals
-              </p>
-              <div className="col-span-3 relative h-max rounded-3xl rounded-br-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
+              </p> */}
+              {/* <div className="col-span-3 relative h-max rounded-3xl rounded-br-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl " />
                 <Image
                   src={isagi}
@@ -266,7 +266,7 @@ const about = () => {
               <p className="my-4 font-medium">
                 Feint a movement towards a bait to pass to the decoy. When all
                 eyes are on the decoy, emerge from their blind spot and shoot.
-              </p>
+              </p> */}
             </div>
 
             <div className="col-span-3 relative h-max rounded-3xl rounded-br-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
@@ -279,7 +279,7 @@ const about = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="col-span-3 relative h-max rounded-3xl rounded-br-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
+            {/* <div className="col-span-3 relative h-max rounded-3xl rounded-br-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl " />
               <Image
                 src={nagi}
@@ -288,7 +288,7 @@ const about = () => {
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-            </div>
+            </div> */}
 
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">

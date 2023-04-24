@@ -7,7 +7,7 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/assets/d.PNG";
 import project2 from "../../public/images/projects/portfolio-cover-image.jpg";
 import project3 from "../../public/images/projects/agency-website-cover-image.jpg";
 import project4 from "../../public/images/projects/fashion-studio-website.jpg";
@@ -140,20 +140,19 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Productivity App for Go Players"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
+                title="New Paradigm - Type Safe Algorithmic Content Curator"
+                summary="A full-stack web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, Prisma, PlanetScale, Cypress, and Clerk.
+"
+                link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
-                github="/"
+                github="https://github.com/hnakae/NewParadigm"
               />
             </div>
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Youtube Transcriber App"
+                title="Netflix Clone"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive."
                 link="/"
@@ -165,7 +164,7 @@ page transitions, cool background effects, unique design and it is mobile respon
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="OpenAI API Integration"
+                title="Twitter Clone"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
@@ -178,7 +177,7 @@ local currency."
 
             <div className="col-span-12">
               <FeaturedProject
-                title="Inventory Management System"
+                title="OpenAI GPT4 App using RapidAPI (Coming Soon)"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive."
                 link="/"
@@ -188,9 +187,9 @@ page transitions, cool background effects, unique design and it is mobile respon
               />
             </div>
 
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
-                title="BadukHub: Content Platform for Go Players"
+                title="E-commerce App"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
@@ -203,7 +202,7 @@ local currency."
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Quiz Game"
+                title="Pixel Perfect Design"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
@@ -212,7 +211,7 @@ local currency."
                 img={project6}
                 github="/"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
