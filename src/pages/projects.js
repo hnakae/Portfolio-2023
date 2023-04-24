@@ -7,7 +7,7 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
-import project1 from "../../public/assets/d.png";
+import project1 from "../../public/assets/project1.png";
 import project2 from "../../public/images/projects/portfolio-cover-image.jpg";
 import project3 from "../../public/images/projects/agency-website-cover-image.jpg";
 import project4 from "../../public/images/projects/fashion-studio-website.jpg";
