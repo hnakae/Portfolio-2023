@@ -138,8 +138,7 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="New Paradigm - Fully Stacked TypeScript Web Application"
-                summary="A full-stack web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, Prisma, PlanetScale, Cypress, and Clerk.
-"
+                summary="A full-stack web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, Prisma, PlanetScale, Cypress, and Clerk. (Bring in icons for the technologies)"
                 link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
@@ -149,7 +148,7 @@ const projects = () => {
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Media Platform: Curated Lessons for Go Players"
+                title="Media Platform: Curated Lessons for Go Players(Coming Soon)"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive."
                 link="/"
@@ -161,7 +160,7 @@ page transitions, cool background effects, unique design and it is mobile respon
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="AI Dashboard: Algorithmic Data Visualizer"
+                title="AI Dashboard: Algorithmic Data Visualizer(Coming Soon)"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
