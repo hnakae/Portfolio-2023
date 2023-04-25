@@ -121,7 +121,7 @@ const works = () => {
   return (
     <>
       <Head>
-        <title>Hironobu | Projects Page</title>
+        <title>Hironobu | Works Page</title>
         <meta name="description" content="Hironobu Nakae's Portfolio" />
         {/* include meta tag with key words for seo */}
       </Head>

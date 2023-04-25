@@ -7,7 +7,7 @@ import white from "../../public/assets/white.png";
 
 const HireMe = ({ text }) => {
   return (
-    <div className="fixed z-5 left-4 bottom-4 flex items-center justify-center overflow-hidden ">
+    <div className="fixed z-5 right-4 bottom-4 flex items-center justify-center overflow-hidden ">
       <div className="w-48 h-auto flex items-center justify-center relative">
         <CircularText
           className={"fill-dark animate-spin-slow dark:fill-light"}

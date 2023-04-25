@@ -5,14 +5,14 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useMotionValue } from "framer-motion";
-import article1 from "../../public/images/articles/1.png";
-import article2 from "../../public/images/articles/2.png";
-import article3 from "../../public/images/articles/3.png";
-import article4 from "../../public/images/articles/4.png";
-import article5 from "../../public/images/articles/5.png";
-import article6 from "../../public/images/articles/6.png";
-// import article7 from "../../public/images/articles/What is Redux with easy explanation.png";
-// import article8 from "../../public/images/articles/What is higher order component in React.jpg";
+import blog1 from "../../public/images/blogs/1.png";
+import blog2 from "../../public/images/blogs/2.png";
+import blog3 from "../../public/images/blogs/3.png";
+import blog4 from "../../public/images/blogs/4.png";
+import blog5 from "../../public/images/blogs/5.png";
+import blog6 from "../../public/images/blogs/6.png";
+// import Blog7 from "../../public/images/Blogs/What is Redux with easy explanation.png";
+// import Blog8 from "../../public/images/Blogs/What is higher order component in React.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -55,7 +55,7 @@ const MovingImg = ({ img, title, link }) => {
   );
 };
 
-const Article = ({ img, title, date, link }) => {
+const Blog = ({ img, title, date, link }) => {
   return (
     <motion.li
       initial={{ y: 200 }}
@@ -71,7 +71,7 @@ const Article = ({ img, title, date, link }) => {
   );
 };
 
-const FeaturedArticle = ({ img, title, time, summary, link }) => {
+const FeaturedBlog = ({ img, title, time, summary, link }) => {
   return (
     <li className="relative col-span-1 w-full p-4 bg-light dark:bg-dark border border-solid border-dark dark:border-light rounded-2xl">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl" />
@@ -103,11 +103,11 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
   );
 };
 
-const articles = () => {
+const blog = () => {
   return (
     <>
       <Head>
-        <title>Hironobu | Articles Page</title>
+        <title>Hironobu | Blog Page</title>
         <meta name="description" content="Hironobu Nakae's Portfolio" />
       </Head>
       <TransitionEffect />
@@ -115,65 +115,65 @@ const articles = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="Get useful insights in our web develepment blog"
-            className="my-24 !text-7xl !text-start !font-semibold lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+            className="my-24 !text-7xl !text-start !font-semibold 2xl:!text-5xl lg:!text-4xl md:!text-3xl"
           />
           <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
-            <FeaturedArticle
+            <FeaturedBlog
               title="Fundamentals"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. 
 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
               link="/"
-              img={article1}
+              img={blog1}
             />
-            <FeaturedArticle
+            <FeaturedBlog
               title="Alpha Go Zero"
               summary="Learn how to create stunning loading screens in React with 3 different methods. 
 Discover how to use React-Loading, React-Lottie & build a custom loading screen. 
 Improve the user experience."
               time="10 min read"
               link="/"
-              img={article2}
+              img={blog2}
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            All Articles
+            All Blogs
           </h2>
           <ul>
-            <Article
+            <Blog
               title="Modern Joseki"
-              img={article1}
+              img={blog1}
               date="March 09, 2023"
               link="/"
             />
-            <Article
+            <Blog
               title="AI Tactics"
-              img={article2}
+              img={blog2}
               date="March 09, 2023"
               link="/"
             />
-            <Article
+            <Blog
               title="Reduce with double approach attach & aji"
-              img={article3}
+              img={blog3}
               date="March 09, 2023"
               link="/"
             />
 
-            <Article
+            <Blog
               title="Invade 3 space high"
-              img={article4}
+              img={blog4}
               date="March 09, 2023"
               link="/"
             />
-            <Article
+            <Blog
               title="Enclosure + Extension + Reinforcement"
-              img={article5}
+              img={blog5}
               date="March 09, 2023"
               link="/"
             />
-            <Article
+            <Blog
               title="Center Control"
-              img={article6}
+              img={blog6}
               date="March 09, 2023"
               link="/"
             />
@@ -184,4 +184,4 @@ Improve the user experience."
   );
 };
 
-export default articles;
+export default blog;
