@@ -119,9 +119,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <HireMe text="Hire me!" />
         </Layout>
-
-        <HireMe text="Hire me!" />
 
         {/* <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
           <Image src={penguin} alt="HiroNakae" className="w-full h-auto" />
