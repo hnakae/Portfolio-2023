@@ -24,7 +24,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="HiroNakae"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className="w-full h-auto md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
@@ -58,11 +58,11 @@ export default function Home() {
           </div>
         </Layout>
 
-        <HireMe text="Go!" />
+        {/* <HireMe text="Go!" /> */}
 
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
+        {/* <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
           <Image src={penguin} alt="HiroNakae" className="w-full h-auto" />
-        </div>
+        </div> */}
       </main>
     </>
   );
