@@ -48,8 +48,13 @@ const about = () => {
       <main className="flex w-full flex-full flex-col justify-center text-dark dark:text-light ">
         <Layout className="pt-16">
           <AnimatedText
-            text="Dedication to delivering high-quality results."
-            className="mb-16 lg:!text-7xl sm:!text-6xl md:!text-4xl sm:mb-8 "
+            text="We are friendly and experienced Product Design Agency"
+            className="!text-start !text-7xl !font-semibold mt-36 mb-12 lg:!text-7xl sm:!text-6xl md:!text-4xl sm:mb-8 "
+          />
+          <AnimatedText
+            text="We are a team of multidisciplinary digital product experts consisting of
+experienced product managers, designers, developers, and buisiness analysts."
+            className="!text-3xl !text-start !font-normal mb-36 lg:!text-7xl sm:!text-6xl md:!text-4xl sm:mb-8 "
           />
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">

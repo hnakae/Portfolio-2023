@@ -128,11 +128,20 @@ const works = () => {
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText
-            text="WE MAKE SUCCESSFUL DIGITAL EXPERIENCES."
-            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
-          />
-
+          <div className="w-full flex lg:flex-col">
+            <div className="text-8xl xl:text-7xl lg:text-6xl font-bold my-24">
+              WE MAKE <br /> SUCCESSFUL <br /> DIGITAL <br /> EXPERIENCES.
+            </div>
+            <div className="font-semibold lg:mb-12 flex items-end my-24 pl-20 lg:my-0 lg:pl-0">
+              A caring partner that provides <br /> innovative Design solutions
+              for funded <br /> Startups, technology SMEs, and <br /> Fortune
+              500 companies.
+            </div>
+            {/* <AnimatedText
+              text="WE MAKE SUCCESSFUL DIGITAL EXPERIENCES."
+              className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
+            /> */}
+          </div>
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject

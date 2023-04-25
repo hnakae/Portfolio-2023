@@ -72,7 +72,6 @@ const Navbar = () => {
         {/* </div> */}
         <nav>
           <CustomLink href="/works" title="Works" className="mr-4" />
-          <CustomLink href="/services" title="Services" className="mx-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/articles" title="Blog" className="mx-4" />
           <CustomLink
@@ -178,12 +177,7 @@ const Navbar = () => {
               className=""
               toggle={handleClick}
             />
-            <CustomMobileLink
-              href="/services"
-              title="Services"
-              className=""
-              toggle={handleClick}
-            />
+
             <CustomMobileLink
               href="/about"
               title="About"
@@ -208,7 +202,7 @@ const Navbar = () => {
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={`w-6 sm:mx-1 ml-3 flex items-center justify-center rounded-full p-1 mb-8
-  ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+  ${mode === "dark" ? "bg-dark text-light" : "bg-light text-dark"}`}
             >
               {mode === "dark" ? (
                 <SunIcon className={"fill-dark"} />
