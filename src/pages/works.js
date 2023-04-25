@@ -52,8 +52,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         </p>
         <div className="mt-2 flex items-center ">
           <Link href={github} target="_blank" className="w-10">
-            {" "}
-            <GithubIcon />{" "}
+            <GithubIcon />
           </Link>
           <Link
             href={link}
@@ -118,7 +117,7 @@ const Project = ({ title, type, img, link, github }) => {
   );
 };
 
-const projects = () => {
+const works = () => {
   return (
     <>
       <Head>
@@ -130,7 +129,7 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="From Concept to Creation!"
+            text="WE MAKE SUCCESSFUL DIGITAL EXPERIENCES."
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
           />
 
@@ -215,4 +214,4 @@ local currency."
   );
 };
 
-export default projects;
+export default works;

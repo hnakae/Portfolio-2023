@@ -5,14 +5,14 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useMotionValue } from "framer-motion";
-import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import article2 from "../../public/images/articles/create loading screen in react js.jpg";
-import article3 from "../../public/images/articles/create modal component in react using react portals.png";
-import article4 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import article6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
-import article7 from "../../public/images/articles/What is Redux with easy explanation.png";
-import article8 from "../../public/images/articles/What is higher order component in React.jpg";
+import article1 from "../../public/images/articles/1.png";
+import article2 from "../../public/images/articles/2.png";
+import article3 from "../../public/images/articles/3.png";
+import article4 from "../../public/images/articles/4.png";
+import article5 from "../../public/images/articles/5.png";
+import article6 from "../../public/images/articles/6.png";
+// import article7 from "../../public/images/articles/What is Redux with easy explanation.png";
+// import article8 from "../../public/images/articles/What is higher order component in React.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -114,7 +114,7 @@ const articles = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center over-flow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Exploring Ideas and Trends!"
+            text="Get useful insights in our web develepment blog"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
@@ -142,38 +142,38 @@ Improve the user experience."
           <ul>
             <Article
               title="Modern Joseki"
-              img={article3}
+              img={article1}
               date="March 09, 2023"
               link="/"
             />
             <Article
               title="AI Tactics"
-              img={article4}
+              img={article2}
               date="March 09, 2023"
               link="/"
             />
             <Article
               title="Reduce with double approach attach & aji"
-              img={article5}
+              img={article3}
               date="March 09, 2023"
               link="/"
             />
 
             <Article
               title="Invade 3 space high"
-              img={article6}
+              img={article4}
               date="March 09, 2023"
               link="/"
             />
             <Article
               title="Enclosure + Extension + Reinforcement"
-              img={article7}
+              img={article5}
               date="March 09, 2023"
               link="/"
             />
             <Article
               title="Center Control"
-              img={article8}
+              img={article6}
               date="March 09, 2023"
               link="/"
             />

@@ -46,9 +46,9 @@ const about = () => {
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-full flex-col justify-center text-dark dark:text-light ">
-        <Layout className="pt-0">
+        <Layout className="pt-16">
           <AnimatedText
-            text="Unleashing Creativity!"
+            text="Dedication to delivering high-quality results."
             className="mb-16 lg:!text-7xl sm:!text-6xl md:!text-4xl sm:mb-8 "
           />
 
@@ -58,19 +58,17 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                <Image src={penguin} className="w-10" />
-                Hi, I'm Hiro, a full-stack developer based in Eugene with a
+                Hi there. I'm Hiro, a web developer based in Eugene with a
                 passion for building digital experiences on the web.
               </p>
               <p className="my-4 font-medium">
-                <Image src={go} className="w-10" />
-                I'm also a huge fan of baduk (go), a game that has been a part
-                of my life for over a decade now.
+                If you want to improve, redesign, or build your website from
+                scratch, I'm your guy!
               </p>
 
               <p className="font-medium">
-                Personal Brand <br />
-                Curious Driven Motivated Creative
+                Take a look at my works to see the latest projects I've worked
+                on.
               </p>
             </div>
 
