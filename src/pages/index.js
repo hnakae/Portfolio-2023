@@ -6,7 +6,6 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
-import penguin from "../../public/assets/penguin.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 import { motion } from "framer-motion";
 import {
@@ -45,7 +44,7 @@ export default function Home() {
                 className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
               />
               <AnimatedText
-                text="Web Development"
+                text="Web Developer"
                 className="my-4 !text-7xl !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
               />
               {/* <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
@@ -119,8 +118,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <HireMe text="Hire me!" />
         </Layout>
+
+        {/* <HireMe text="Hire me!" /> */}
 
         {/* <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
           <Image src={penguin} alt="HiroNakae" className="w-full h-auto" />

@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "custom-font";
+  src: url("../../public/fonts/Gordita-Regular.otf");
+}
+
+@layer base {
+  html {
+    font-family: custom-font;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

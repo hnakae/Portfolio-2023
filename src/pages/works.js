@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Layout from "@/components/Layout";
-import AnimatedText from "@/components/AnimatedText";
+// import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
@@ -129,10 +129,11 @@ const works = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <div className="w-full flex lg:flex-col">
-            <div className="text-8xl xl:text-7xl lg:text-6xl font-bold my-24">
-              WE MAKE <br /> SUCCESSFUL <br /> DIGITAL <br /> EXPERIENCES.
+            <div className="text-8xl xl:text-7xl lg:text-6xl font-bold my-24 mx-20">
+              WE MAKE <br /> SUCCESSFUL <br /> DIGITAL <br /> EXPERIENCES
+              <span className="animate-[pulse_1s_ease-in-out_infinite]">.</span>
             </div>
-            <div className="font-semibold lg:mb-12 flex items-end my-24 pl-20 lg:my-0 lg:pl-0">
+            <div className="font-semibold text-xl lg:mb-12 flex items-end my-24 pl-8 pb-4 lg:my-0 lg:pl-0">
               A caring partner that provides <br /> innovative Design solutions
               for funded <br /> Startups, technology SMEs, and <br /> Fortune
               500 companies.
