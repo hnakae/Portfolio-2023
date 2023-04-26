@@ -14,6 +14,7 @@ import blog6 from "../../public/images/blogs/6.png";
 // import Blog7 from "../../public/images/Blogs/What is Redux with easy explanation.png";
 // import Blog8 from "../../public/images/Blogs/What is higher order component in React.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
+import icon6 from "../../public/assets/icons/icon-6.png";
 
 const FramerImage = motion(Image);
 
@@ -112,7 +113,12 @@ const blog = () => {
       </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center over-flow-hidden dark:text-light">
-        <Layout className="pt-16">
+        <Layout className="pt-16 relative">
+          <Image
+            src={icon6}
+            alt="icon"
+            className="w-20 absolute top-[7%] right-40"
+          />
           <AnimatedText
             text="Get useful insights in our web develepment blog"
             className="my-24 !text-7xl !text-start !font-semibold 2xl:!text-5xl lg:!text-4xl md:!text-3xl"

@@ -11,6 +11,15 @@ import project1 from "../../public/images/projects/example.png";
 import project2 from "../../public/images/projects/example2.png";
 import project3 from "../../public/images/projects/example3.png";
 
+import icon from "../../public/assets/icons/icon.png";
+import icon1 from "../../public/assets/icons/icon-1.png";
+import icon2 from "../../public/assets/icons/icon-2.png";
+import icon4 from "../../public/assets/icons/icon-4.png";
+import icon5 from "../../public/assets/icons/icon-5.png";
+import icon7 from "../../public/assets/icons/icon-7.png";
+import icon8 from "../../public/assets/icons/icon-8.png";
+import icon9 from "../../public/assets/icons/icon-9.png";
+
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -127,13 +136,19 @@ const works = () => {
       </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16">
+        <Layout className="pt-16 relative">
+          <Image
+            src={icon2}
+            alt="icon"
+            className="w-20 absolute top-10 left-40"
+          />
+
           <div className="w-full flex lg:flex-col">
             <div className="text-8xl xl:text-7xl lg:text-6xl font-bold my-24 mx-20">
               WE MAKE <br /> SUCCESSFUL <br /> DIGITAL <br /> EXPERIENCES
               <span className="animate-[pulse_1s_ease-in-out_infinite]">.</span>
             </div>
-            <div className="font-semibold text-xl lg:mb-12 flex items-end my-24 pl-8 pb-4 lg:my-0 lg:pl-0">
+            <div className=" font-semibold text-xl lg:mb-12 flex items-end my-24 pl-8 pb-4 lg:my-0 lg:pl-0">
               A caring partner that provides <br /> innovative Design solutions
               for funded <br /> Startups, technology SMEs, and <br /> Fortune
               500 companies.
