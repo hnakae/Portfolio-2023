@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "custom-font";
-  src: url("../../public/fonts/Gordita-Regular.otf");
-}
-
 @layer base {
-  html {
-    font-family: custom-font;
+  @font-face {
+    font-family: "Gordita";
+    src: url("/fonts/Gordita-Regular.otf") .format("opentype"),
+      url("/fonts/Gordita-Light.otf") .format("opentype"),
+      url("/fonts/Gordita-Medium.otf") .format("opentype"),
+      url("/fonts/Gordita-Bold.otf") .format("opentype"),
+      url("/fonts/Gordita-Black.otf") .format("opentype");
   }
 }
 

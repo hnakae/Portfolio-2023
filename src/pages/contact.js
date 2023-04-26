@@ -15,8 +15,8 @@ const contact = () => {
         <meta name="description" content="Hironobu Nakae's Portfolio" />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
-        <Layout className="pt-0 md:pt-16 sm:pt-8">
+      <main className="flex items-center">
+        <Layout className="pt-0">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
               <div>Send us an email</div>
@@ -31,6 +31,9 @@ const contact = () => {
               />
             </div>
             <div className="w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center">
+              <div className="flex item-center justify-center flex-shrink-0 flex-grow-0 hover:outline ">
+                BOX
+              </div>
               <AnimatedText
                 text="Let's Connect!"
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"

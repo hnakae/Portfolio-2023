@@ -135,7 +135,7 @@ const works = () => {
         {/* include meta tag with key words for seo */}
       </Head>
       <TransitionEffect />
-      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+      <main className="flex items-center ">
         <Layout className="pt-16 relative">
           <Image
             src={icon2}

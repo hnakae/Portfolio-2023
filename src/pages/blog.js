@@ -112,7 +112,7 @@ const blog = () => {
         <meta name="description" content="Hironobu Nakae's Portfolio" />
       </Head>
       <TransitionEffect />
-      <main className="w-full mb-16 flex flex-col items-center justify-center over-flow-hidden dark:text-light">
+      <main className="flex items-center ">
         <Layout className="pt-16 relative">
           <Image
             src={icon6}

@@ -46,7 +46,7 @@ const about = () => {
         <meta name="description" content="Hironobu Nakae's Portfolio" />
       </Head>
       <TransitionEffect />
-      <main className="flex w-full flex-full flex-col justify-center text-dark dark:text-light ">
+      <main className="flex items-center ">
         <Layout className="pt-16 relative">
           <Image
             src={icon3}
