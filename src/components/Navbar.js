@@ -77,7 +77,7 @@ const Navbar = () => {
           <CustomLink
             href="/contact"
             title="Contact us"
-            className="mx-4 border border-dark p-4 dark:border-light"
+            className="mx-4 border border-dark p-4 dark:border-light hover:bg-brand"
           />
 
           <button

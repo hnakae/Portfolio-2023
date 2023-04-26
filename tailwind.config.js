@@ -20,6 +20,7 @@ module.exports = {
         primaryDark: "#58E6D9", // 80,230,217
         coffee: "#f0e7db",
         opaque: "#ffffff40",
+        brand: "#00d5ff",
       },
       animation: {
         "spin-slow": "spin 8s linear infinite",

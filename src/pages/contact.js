@@ -41,12 +41,14 @@ const contact = () => {
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 Work | Consulting | Lessons
               </p>
-              <form>
+              <form className="">
                 <input placeholder="Your name" className="w-1/2" />
                 <input placeholder="Your email" className="w-1/2" /> <br />
                 <input placeholder="Your message" className="w-full" />
                 <br />
-                <button className="p-4 border">Submit</button>
+                <button className=" my-4 px-10 py-3 border bg-brand font-semibold ">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
