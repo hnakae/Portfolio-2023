@@ -15,7 +15,7 @@ const contact = () => {
         <meta name="description" content="Hironobu Nakae's Portfolio" />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center">
+      <main className="flex items-center min-h-screen">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">

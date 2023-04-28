@@ -112,13 +112,13 @@ const blog = () => {
         <meta name="description" content="Hironobu Nakae's Portfolio" />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center ">
-        <Layout className="pt-16 relative">
-          <Image
+      <main className="flex items-center min-h-screen">
+        <Layout className="pt-16 ">
+          {/* <Image
             src={icon6}
             alt="icon"
             className="w-20 absolute top-[7%] right-40"
-          />
+          /> */}
           <AnimatedText
             text="Get useful insights in our web develepment blog"
             className="my-24 !text-7xl !text-start !font-semibold 2xl:!text-5xl lg:!text-4xl md:!text-3xl"

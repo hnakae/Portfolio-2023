@@ -20,6 +20,9 @@ import icon7 from "../../public/assets/icons/icon-7.png";
 import icon8 from "../../public/assets/icons/icon-8.png";
 import icon9 from "../../public/assets/icons/icon-9.png";
 
+import { Icon } from "react-icons-kit";
+import { arrow_down } from "react-icons-kit/ikons/arrow_down";
+
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -135,14 +138,8 @@ const works = () => {
         {/* include meta tag with key words for seo */}
       </Head>
       <TransitionEffect />
-      <main className="flex items-center ">
-        <Layout className="pt-16 relative">
-          <Image
-            src={icon2}
-            alt="icon"
-            className="w-20 absolute top-10 left-40"
-          />
-
+      <main className="flex items-center min-h-screen">
+        <Layout className="pt-16">
           <div className="w-full flex lg:flex-col">
             <div className="text-8xl xl:text-7xl lg:text-6xl font-bold my-24 mx-20">
               WE MAKE <br /> SUCCESSFUL <br /> DIGITAL <br /> EXPERIENCES
@@ -153,12 +150,14 @@ const works = () => {
               for funded <br /> Startups, technology SMEs, and <br /> Fortune
               500 companies.
             </div>
-            {/* <AnimatedText
-              text="WE MAKE SUCCESSFUL DIGITAL EXPERIENCES."
-              className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl "
-            /> */}
           </div>
-          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+          <div className="font-semibold text-xs flex justify-center">
+            <div className="cursor-pointer pb-8">VIEW MORE PROJECTS</div>
+          </div>
+          <div className="flex justify-center">
+            <Icon icon={arrow_down} className="" />
+          </div>
+          {/* <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title="New Paradigm - Fully Stacked TypeScript Web Application"
@@ -194,45 +193,7 @@ local currency."
                 github="/"
               />
             </div>
-
-            {/* <div className="col-span-12">
-              <FeaturedProject
-                title="OpenAI GPT4 App using RapidAPI (Coming Soon)"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-page transitions, cool background effects, unique design and it is mobile responsive."
-                link="/"
-                type="Featured Project"
-                img={project2}
-                github="/"
-              />
-            </div> */}
-
-            {/* <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="E-commerce App"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
-                type="Project"
-                img={project5}
-                github="/"
-              />
-            </div>
-
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Pixel Perfect Design"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
-                type="Project"
-                img={project6}
-                github="/"
-              />
-            </div> */}
-          </div>
+          </div> */}
         </Layout>
       </main>
     </>

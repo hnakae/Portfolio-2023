@@ -28,7 +28,7 @@ export default function Home() {
 
       <TransitionEffect />
 
-      <main className="flex items-center ">
+      <main className="flex items-center min-h-screen ">
         <Layout className="pt-0 md:pt-16 sm:pt-8 ">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
@@ -42,12 +42,12 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Get highly-performing, fully functional and secure web interfaces."
-                className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
+                text="Hiro Nakae"
+                className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
               />
               <AnimatedText
-                text="Web Developer"
-                className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
+                text="Hi there. I'm a Web Developer based in Eugene, Oregon."
+                className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
               />
               {/* <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 Get highly-performing, fully functional and secure web
