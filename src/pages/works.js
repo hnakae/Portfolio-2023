@@ -154,10 +154,12 @@ const works = () => {
           <div className="font-semibold text-xs flex justify-center pb-4">
             <div className="cursor-pointer">VIEW MORE PROJECTS</div>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center p-4">
             <Icon icon={arrow_down} className="cursor-pointer animate-bounce" />
-            <Icon icon={arrow_down} className="cursor-pointer animate-bounce" />
-            <Icon icon={arrow_down} className="cursor-pointer animate-bounce" />
+            <Icon
+              icon={arrow_down}
+              className="cursor-pointer animate-bounce pb-4"
+            />
           </div>
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
