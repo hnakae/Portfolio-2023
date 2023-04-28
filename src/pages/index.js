@@ -47,7 +47,7 @@ export default function Home() {
               />
               <AnimatedText
                 text="Web Developer"
-                className="my-4 !text-7xl !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
+                className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
               />
               {/* <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 Get highly-performing, fully functional and secure web
