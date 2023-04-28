@@ -35,7 +35,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="HiroNakae"
-                className="w-full h-auto md:inline-block md:w-full"
+                className="w-full h-auto md:inline-block md:w-full "
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />

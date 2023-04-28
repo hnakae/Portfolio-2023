@@ -62,7 +62,7 @@ const Blog = ({ img, title, date, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light dark:bg-dark text-dark dark:text-light first:mt--0 border border-solid border-dark dark:border-light border-r-4 border-b-4 sm:flex-col "
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light dark:bg-dark text-dark dark:text-light first:mt--0 border border-solid border-brand border-r-4 border-b-4 sm:flex-col "
     >
       <MovingImg title={title} img={img} link={link} />
       <span className="text-primary dark:text-primaryDark font-semibold pl-4 sm:self-start sm:pl-0 xs:text-sm">
@@ -74,8 +74,8 @@ const Blog = ({ img, title, date, link }) => {
 
 const FeaturedBlog = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light dark:bg-dark border border-solid border-dark dark:border-light rounded-2xl">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl" />
+    <li className="relative col-span-1 w-full p-4 bg-light dark:bg-dark outline outline-brand dark:border-light rounded-2xl">
+      {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl" /> */}
       <Link
         href={link}
         target="_blank"

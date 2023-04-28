@@ -31,9 +31,9 @@ const contact = () => {
               />
             </div>
             <div className="w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center">
-              <div className="flex item-center justify-center flex-shrink-0 flex-grow-0 hover:outline ">
+              {/* <div className="flex item-center justify-center flex-shrink-0 flex-grow-0 hover:outline ">
                 BOX
-              </div>
+              </div> */}
               <AnimatedText
                 text="Let's Connect!"
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
@@ -41,12 +41,22 @@ const contact = () => {
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 Work | Consulting | Lessons
               </p>
-              <form className="">
-                <input placeholder="Your name" className="w-1/2" />
-                <input placeholder="Your email" className="w-1/2" /> <br />
-                <input placeholder="Your message" className="w-full" />
+              <form className="animate-pulse caret-brand ">
+                <input
+                  placeholder="Your name"
+                  className="w-[47.5%] p-2 mr-[2.5%] focus:outline-brand "
+                />
+                <input
+                  placeholder="Your email"
+                  className="w-[47.5%] p-2 ml-[2.5%] focus:outline-brand"
+                />{" "}
                 <br />
-                <button className=" my-4 px-10 py-3 border bg-brand font-semibold ">
+                <textarea
+                  placeholder="Your message"
+                  className="w-full p-2 mt-2 focus:outline-brand"
+                />
+                <br />
+                <button className=" my-4 px-10 py-3 bg-brand font-semibold rounded-md">
                   Submit
                 </button>
               </form>

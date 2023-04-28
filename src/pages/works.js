@@ -27,8 +27,8 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="p-12 relative rounded-br-2xl w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
+    <article className="p-12 relative rounded-br-2xl w-full flex items-center justify-between rounded-3xl bg-light dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 outline outline-brand">
+      {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
 
       <Link
         href={link}
@@ -81,8 +81,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light p-6 relative xs:p-4">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
+    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-light dark:bg-dark dark:border-light p-6 relative xs:p-4 outline outline-brand">
+      {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" /> */}
 
       <Link
         href={link}
@@ -141,7 +141,7 @@ const works = () => {
       <main className="flex items-center min-h-screen">
         <Layout className="pt-16">
           <div className="w-full flex lg:flex-col">
-            <div className="text-8xl xl:text-7xl lg:text-6xl font-bold my-24 mx-20">
+            <div className="text-7xl lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl font-bold my-24 mx-20">
               WE MAKE <br /> SUCCESSFUL <br /> DIGITAL <br /> EXPERIENCES
               <span className="animate-[pulse_1s_ease-in-out_infinite]">.</span>
             </div>
@@ -151,13 +151,15 @@ const works = () => {
               500 companies.
             </div>
           </div>
-          <div className="font-semibold text-xs flex justify-center">
-            <div className="cursor-pointer pb-8">VIEW MORE PROJECTS</div>
+          <div className="font-semibold text-xs flex justify-center pb-4">
+            <div className="cursor-pointer">VIEW MORE PROJECTS</div>
           </div>
-          <div className="flex justify-center">
-            <Icon icon={arrow_down} className="" />
+          <div className="flex flex-col justify-center items-center">
+            <Icon icon={arrow_down} className="cursor-pointer animate-bounce" />
+            <Icon icon={arrow_down} className="cursor-pointer animate-bounce" />
+            <Icon icon={arrow_down} className="cursor-pointer animate-bounce" />
           </div>
-          {/* <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title="New Paradigm - Fully Stacked TypeScript Web Application"
@@ -193,7 +195,7 @@ local currency."
                 github="/"
               />
             </div>
-          </div> */}
+          </div>
         </Layout>
       </main>
     </>
