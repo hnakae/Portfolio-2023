@@ -46,7 +46,7 @@ export default function Home() {
                 className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
               />
               <AnimatedText
-                text="Hi there. I'm a Web Developer based in Eugene, Oregon."
+                text="Hi there. I'm a Software Developer based in Eugene, Oregon."
                 className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
               />
               {/* <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
@@ -54,7 +54,7 @@ export default function Home() {
                 experiences that are able to scale as your business grows.
               </p> */}
 
-              <nav className="flex items-center justify-start flex-wrap my-8">
+              <nav className="flex items-center justify-start flex-wrap my-8 lg:!justify-center">
                 <motion.a
                   href="https://twitter.com"
                   target={"_blank"}
