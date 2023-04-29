@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import bgLines from "../../public/assets/bg-lines.png";
 
 const contact = () => {
   return (
@@ -23,9 +23,9 @@ const contact = () => {
               <div>info@my.agency</div>
 
               <Image
-                src={profilePic}
+                src={bgLines}
                 alt="HiroNakae"
-                className="max-w-[500px] h-auto lg:hidden md:inline-block md:w-full"
+                className="max-w-[500px] h-auto md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />

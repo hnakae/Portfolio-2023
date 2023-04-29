@@ -23,6 +23,8 @@ import icon9 from "../../public/assets/icons/icon-9.png";
 import { Icon } from "react-icons-kit";
 import { arrow_down } from "react-icons-kit/ikons/arrow_down";
 
+// import '
+
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.typewriter {
+  animation: typing 2s steps(10), cursor 0.4s step-end infinite alternate;
+}
+
 @layer base {
   @font-face {
     font-family: "Gordita";

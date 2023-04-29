@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "@/components/Layout";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+// import Hero from "../../public/images/";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import {
@@ -42,22 +42,13 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="pt-0 md:pt-16 sm:pt-8 ">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
-              {/* <Image
-                src={profilePic}
-                alt="HiroNakae"
-                className="w-full h-auto md:inline-block md:w-full "
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              /> */}
-            </div>
             <div className="w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Hiro Nakae"
                 className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
               />
               <AnimatedText
-                text="Hi there. I'm a Software Engineer based in Eugene, Oregon."
+                text="Hi there. I'm a Web Developer based in Eugene, Oregon."
                 className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
               />
               {/* <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
@@ -133,6 +124,7 @@ export default function Home() {
                 </Link> */}
               </div>
             </div>
+            <div className="w-1/2 md:w-full"></div>
           </div>
         </Layout>
       </main>
