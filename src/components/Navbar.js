@@ -64,14 +64,14 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className=" z-10 w-full h-[88px] px-16 py-8 font-medium flex text-dark items-center justify-between dark:text-light  lg:px-16 md:px-12 sm:px-8 ">
+    <header className=" z-10 w-full h-[88px] px-16 py-8 font-medium flex text-dark items-center justify-between dark:text-light  lg:px-16 md:px-12 sm:px-8 lg:absolute ">
       {/* desktop */}
       <div className="w-full flex justify-between items-center">
         {/* <div className="absolute left-[50%] top-2 translate-x-[-50%] "> */}
         <Logo />
         {/* </div> */}
         <nav>
-          <CustomLink href="/works" title="Works" className="mr-4" />
+          <CustomLink href="/works" title="Portfolio" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/blog" title="Blog" className="mx-4" />
           <CustomLink
@@ -222,7 +222,7 @@ const Navbar = () => {
             </div>
             <CustomMobileLink
               href="/contact"
-              title="Nakae27@gmail.com"
+              title="info@my.agency"
               className=""
               toggle={handleClick}
             />

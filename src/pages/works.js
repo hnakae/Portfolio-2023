@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 // import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import { GithubIcon } from "@/components/Icons";
+import { GithubIcon, LinkArrow } from "@/components/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import project1 from "../../public/images/projects/example.png";
@@ -69,9 +69,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            className="ml-4 rounded-lg h-[50px] w-auto bg-dark flex items-center text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
           >
-            Visit Project
+            Live <LinkArrow className={"w-6 ml-1 p-4"} />
           </Link>
         </div>
       </div>
@@ -142,8 +142,8 @@ const works = () => {
         <Layout className="pt-16">
           <div className="w-full flex lg:flex-col">
             <div className="text-7xl lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl font-bold my-24 mx-20">
-              WE MAKE <br /> SUCCESSFUL <br /> DIGITAL <br /> EXPERIENCES
-              <span className="animate-[pulse_1s_ease-in-out_infinite]">.</span>
+              WE MAKE <br /> SUCCESSFUL <br /> DIGITAL <br /> EXPERIENCES.
+              {/* <span className="animate-[pulse_1s_ease-in-out_infinite]">.</span> */}
             </div>
             <div className=" font-semibold text-xl lg:mb-12 flex items-end my-24 pl-8 pb-4 lg:my-0 lg:pl-0">
               A caring partner that provides <br /> innovative Design solutions

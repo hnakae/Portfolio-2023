@@ -4,7 +4,18 @@ import Layout from "@/components/Layout";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/components/Icons";
+import {
+  LinkArrow,
+  NextJS,
+  NextLogo,
+  NextjsLogo,
+  PrismaLogo,
+  ReactIcon,
+  TailwindIcon,
+  TypescriptIcon,
+  TypescriptLogo,
+  VercelLogo,
+} from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
 import { motion } from "framer-motion";
@@ -32,13 +43,13 @@ export default function Home() {
         <Layout className="pt-0 md:pt-16 sm:pt-8 ">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
-              <Image
+              {/* <Image
                 src={profilePic}
                 alt="HiroNakae"
                 className="w-full h-auto md:inline-block md:w-full "
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              />
+              /> */}
             </div>
             <div className="w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center">
               <AnimatedText
@@ -46,7 +57,7 @@ export default function Home() {
                 className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
               />
               <AnimatedText
-                text="Hi there. I'm a Software Developer based in Eugene, Oregon."
+                text="Hi there. I'm a Software Engineer based in Eugene, Oregon."
                 className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
               />
               {/* <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
@@ -54,52 +65,55 @@ export default function Home() {
                 experiences that are able to scale as your business grows.
               </p> */}
 
-              <nav className="flex items-center justify-start flex-wrap my-8 lg:!justify-center">
-                <motion.a
-                  href="https://twitter.com"
-                  target={"_blank"}
+              <nav className="flex items-center justify-start flex-wrap my-4 lg:!justify-center">
+                <motion.div
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-6 mr-3"
+                  className="w-6 mr-4"
+                  title="Next.js"
                 >
-                  <TwitterIcon />
-                </motion.a>
-                <motion.a
-                  href="https://github.com"
-                  target={"_blank"}
+                  <NextJS />
+                </motion.div>
+                <motion.div
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-6 mx-3"
+                  className="w-6 mx-4"
+                  title="React.js"
                 >
-                  <GithubIcon />
-                </motion.a>
-                <motion.a
-                  href="https://linkedin.com"
-                  target={"_blank"}
+                  <ReactIcon />
+                </motion.div>
+                <motion.div
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-6 mx-3"
+                  className="w-6 mx-4"
+                  title="Typescript"
                 >
-                  <LinkedInIcon />
-                </motion.a>
-                <motion.a
-                  href="https://pinterest.com"
-                  target={"_blank"}
+                  <TypescriptIcon />
+                </motion.div>
+                <motion.div
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-6 mx-3 bg-light rounded-full"
+                  className="w-6 mx-4"
+                  title="Tailwind CSS"
                 >
-                  <PinterestIcon />
-                </motion.a>
-                <motion.a
-                  href="https://dribbble.com"
-                  target={"_blank"}
+                  <TailwindIcon />
+                </motion.div>
+                <motion.div
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-6 ml-3"
+                  className="w-6 mx-4"
+                  title="Vercel"
                 >
-                  <DribbbleIcon />
-                </motion.a>
+                  <VercelLogo />
+                </motion.div>
+                <motion.div
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="w-6 ml-4"
+                  title="Prisma ORM"
+                >
+                  <PrismaLogo />
+                </motion.div>
               </nav>
 
               <div className="flex items-center self-start mt-2 lg:self-center">
