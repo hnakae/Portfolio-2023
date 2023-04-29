@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "@/components/Layout";
+import project1 from "/public/images/wordpress.jpg";
 // import Hero from "../../public/images/";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
@@ -28,6 +29,113 @@ import {
   SunIcon,
   MoonIcon,
 } from "@/components/Icons";
+import Icon from "react-icons-kit";
+import { arrow_down } from "react-icons-kit/ikons/arrow_down";
+
+const FramerImage = motion(Image);
+
+const Project = ({ title, type, img, link, github }) => {
+  return (
+    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-light dark:bg-dark dark:border-light p-6 relative xs:p-4 ">
+      {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" /> */}
+
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer overflow-hidden "
+      >
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto rounded-[10px]"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+      </Link>
+
+      <div className="w-full flex flex-col items-start justify-between mt-4">
+        <span className="text-brand dark:text-brandDark font-medium text-xl  lg:text-lg md:text-base">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
+        </Link>
+        <div className="w-full mt-2 flex items-center justify-between">
+          <Link
+            href={link}
+            target="_blank"
+            className=" text-lg font-semibold underline md:text-base"
+          >
+            Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-8 md:w-6">
+            {" "}
+            <GithubIcon />{" "}
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
+const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+  return (
+    <article className="p-12 relative w-full flex items-center justify-between  bg-light dark:bg-dark dark:border-light  lg:p-8  xs:p-4 ">
+      {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
+
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-brand font-medium text-xl dark:text-brandDark xs:text-base">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+            {title}
+          </h2>
+        </Link>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
+        <div className="mt-2 flex items-center ">
+          <Link href={github} target="_blank" className="w-10">
+            <GithubIcon />
+          </Link>
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4  h-[50px] w-auto  flex items-center  p-2 px-6 text-sm font-semibold dark:bg-dark dark:text-light "
+          >
+            VIEW PROJECT <LinkArrow className={"w-6 ml-1 p-4"} />
+          </Link>
+        </div>
+      </div>
+      <Link
+        href={link}
+        target="_blank"
+        className="w-auto cursor-pointer overflow-hidden  lg:w-full hover:outline hover:outline-brand"
+      >
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+        />
+      </Link>
+    </article>
+  );
+};
 
 export default function Home() {
   return (
@@ -41,90 +149,144 @@ export default function Home() {
 
       <main className="flex items-center min-h-screen ">
         <Layout className="pt-0 md:pt-16 sm:pt-8 ">
-          <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 flex flex-col item-center self-center lg:w-full lg:text-center">
-              <AnimatedText
-                text="Hiro Nakae"
-                className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
-              />
-              <AnimatedText
-                text="Hi there. I'm a Web Developer based in Eugene, Oregon."
-                className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
-              />
-              {/* <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                Get highly-performing, fully functional and secure web
-                experiences that are able to scale as your business grows.
-              </p> */}
+          {/* FLEX CONTAINER */}
+          <div className="flex flex-col items-center justify-between w-full lg:flex-col mb-4 ">
+            {/* HERO TEXT */}
+            <AnimatedText
+              text="Hiro Nakae"
+              className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
+            />
+            <AnimatedText
+              text="Hi there. I'm a Front End Developer based in Eugene, Oregon."
+              className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
+            />
+            {/* LOGOS */}
+            {/* <div className="flex items-center justify-start flex-wrap my-4 lg:!justify-center">
+              <motion.div
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mr-4"
+                title="Next.js"
+              >
+                <NextJS />
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mx-4"
+                title="React.js"
+              >
+                <ReactIcon />
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mx-4"
+                title="Typescript"
+              >
+                <TypescriptIcon />
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mx-4"
+                title="Tailwind CSS"
+              >
+                <TailwindIcon />
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mx-4"
+                title="Vercel"
+              >
+                <VercelLogo />
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 mx-4"
+                title="Vercel"
+              >
+                <Image
+                  src="/assets/logos/logo-sm.png"
+                  width={48}
+                  height={48}
+                  alt="auth"
+                  title="NextAuth.js"
+                />
+              </motion.div>
+              <motion.div
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-6 ml-4"
+                title="Prisma ORM"
+              >
+                <PrismaLogo />
+              </motion.div>
+            </div> */}
 
-              <nav className="flex items-center justify-start flex-wrap my-4 lg:!justify-center">
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-6 mr-4"
-                  title="Next.js"
-                >
-                  <NextJS />
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-6 mx-4"
-                  title="React.js"
-                >
-                  <ReactIcon />
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-6 mx-4"
-                  title="Typescript"
-                >
-                  <TypescriptIcon />
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-6 mx-4"
-                  title="Tailwind CSS"
-                >
-                  <TailwindIcon />
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-6 mx-4"
-                  title="Vercel"
-                >
-                  <VercelLogo />
-                </motion.div>
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-6 ml-4"
-                  title="Prisma ORM"
-                >
-                  <PrismaLogo />
-                </motion.div>
-              </nav>
-
-              <div className="flex items-center self-start mt-2 lg:self-center">
-                <Link
-                  href="/dummy.pdf"
-                  target={"_blank"}
-                  className="h-[50px] w-[150px] flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
-                  download={true}
-                >
-                  Resume <LinkArrow className={"w-6 ml-1"} />
-                </Link>
-                {/* <Link
-                  href="/contact"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
-                >
-                  HIRE ME
-                </Link> */}
+            {/* <div className="flex items-center self-start mt-2 lg:self-center">
+              <Link
+                href="/dummy.pdf"
+                target={"_blank"}
+                className="h-[50px] w-[150px] flex items-center bg-dark text-light p-2.5 px-6 mb-4 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
+                download={true}
+              >
+                Resume <LinkArrow className={"w-6 ml-1"} />
+              </Link>
+              <Link
+                href="/contact"
+                className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
+              >
+                HIRE ME
+              </Link>
+            </div> */}
+          </div>
+          {/* GRID CONTAINER */}
+          <div className="grid grid-cols-12 ">
+            <div className="col-span-12">
+              <FeaturedProject
+                title="New Paradigm"
+                summary="A full-stack web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, Prisma, PlanetScale, Cypress, and Clerk. (Bring in icons for the technologies)"
+                link="https://new-paradigm.vercel.app/"
+                type="Featured Project"
+                img={project1}
+                github="https://github.com/hnakae/NewParadigm"
+              />
+              {/* ARROW INDICATOR */}
+              <div className="font-semibold text-xs flex justify-center pb-4">
+                <div className="cursor-pointer">VIEW MORE PROJECTS</div>
+              </div>
+              <div className="flex flex-col justify-center items-center p-4">
+                <Icon
+                  icon={arrow_down}
+                  className="cursor-pointer animate-bounce"
+                />
               </div>
             </div>
-            <div className="w-1/2 md:w-full"></div>
+            <div className="col-span-6">
+              <Project
+                title="Media Platform: Curated Lessons for Go Players(Coming Soon)"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive."
+                link="/"
+                type="Project"
+                img={project1}
+                github="/"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="Media Platform: Curated Lessons for Go Players(Coming Soon)"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive."
+                link="/"
+                type="Project"
+                img={project1}
+                github="/"
+              />
+            </div>
           </div>
         </Layout>
       </main>
