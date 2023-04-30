@@ -89,10 +89,10 @@ const Project = ({ title, type, img, link, github }) => {
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="p-12 relative w-full flex items-center justify-between  bg-light dark:bg-dark dark:border-light  ">
+    <article className="px-8 mb-6  relative w-full flex items-center justify-between  bg-light dark:bg-dark dark:border-light  ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
 
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+      <div className="h-full flex flex-col items-start justify-between w-1/2 ">
         <span className="text-brand font-medium text-xl dark:text-brandDark xs:text-base">
           {type}
         </span>
@@ -101,14 +101,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-base">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-base">
           {summary}
         </p>
-        <div className="mt-2 flex items-center ">
+        <div className="mt-2 flex items-center sm:hidden">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
           </Link>
@@ -124,7 +124,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-auto cursor-pointer overflow-hidden  lg:w-full hover:outline hover:outline-brand"
+        className="w-1/2 rounded-[10px] cursor-pointer overflow-hidden   hover:outline hover:outline-brand"
       >
         <FramerImage
           src={img}
@@ -154,7 +154,7 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className="flex flex-col px-4 py-12 dark:bg-gray-700 rounded-md">
+          <div className="flex flex-col xs:px-4 sm:px-8 pt-12 dark:bg-gray-700 rounded-md">
             {/* HERO CONTENT */}
             {/* <Image src={hero} alt="hero" className="w-full h-full mb-6" /> */}
             {/* <div className="flex justify-center items-center mb-6">
@@ -176,28 +176,30 @@ export default function Home() {
             /> */}
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
-              className=" xs:text-base font-medium "
+              className=" xs:text-base sm:text-lg font-medium "
             />
             <AnimatedText
-              text="Let's create an experience that delivers results for your product."
-              className=" xs:text-[36px] mt-10 mb-14 xs:font-semibold leading-normal"
+              text="Let's create digital experiences that deliver results for your product."
+              className=" xs:text-[36px] sm:text-[44px] mt-10 mb-28 font-semibold leading-normal"
             />
-            <Link
-              href="/contact"
-              className="font-semibold border border-dark rounded-full flex justify-center w-[180px] items-center py-4 bg-light hover:bg-brandDark "
-            >
-              <span className="text-lg font-bold">Let's talk</span>
-              <Image
-                src={arrow_right}
-                alt="arrow"
-                className="w-auto h-4 ml-4 "
-              />
-            </Link>
+            <div className="flex justify-center">
+              <Link
+                href="/contact"
+                className="font-semibold border border-dark rounded-full flex justify-center w-[180px] items-center py-4 bg-light hover:bg-brandDark "
+              >
+                <span className="text-lg font-bold">Let's talk</span>
+                <Image
+                  src={arrow_right}
+                  alt="arrow"
+                  className="w-auto h-4 ml-4 "
+                />
+              </Link>
+            </div>
             {/* ARROW INDICATOR */}
-            <div className="font-semibold text-xs flex justify-center mt-12">
+            <div className="font-semibold text-xs flex justify-center mt-6">
               <div className="cursor-pointer">VIEW FEATURED PROJECT</div>
             </div>
-            <div className="flex flex-col justify-center items-center p-4">
+            <div className="flex flex-col justify-center items-center p-4 mb-6">
               <Icon
                 icon={arrow_down}
                 className="cursor-pointer animate-bounce"

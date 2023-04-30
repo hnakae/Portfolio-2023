@@ -62,13 +62,16 @@ module.exports = {
       lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
 
-      md: { max: "767px" },
+      //iPad Air
+      md: { max: "820px" },
       // => @media (max-width: 767px) { ... }
 
-      sm: { max: "639px" },
+      //ipad mini
+      sm: { max: "768px" },
       // => @media (max-width: 639px) { ... }
 
-      xs: { max: "413px" },
+      //phones
+      xs: { max: "414px" },
       // => @media (max-width: 479px) { ... }
     },
   },
