@@ -6,10 +6,10 @@ const MotionLink = motion(Link);
 
 const Logo = () => {
   return (
-    <div className="flex items-center justify-center mt-2">
+    <div className="flex items-center justify-center ">
       <MotionLink
         href="/"
-        className="w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold border border-solid border-transparent dark:border-light"
+        className="w-8 h-8 bg-dark flex items-center justify-center rounded-full text-sm  text-light font-bold border border-solid border-transparent dark:border-light"
         whileHover={{
           backgroundColor: [
             "#121212",
@@ -22,7 +22,7 @@ const Logo = () => {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        HN
+        <span className="">HN</span>
       </MotionLink>
     </div>
   );

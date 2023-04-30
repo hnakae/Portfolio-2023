@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "@/components/Layout";
 import project1 from "/public/images/wordpress.jpg";
-// import Hero from "../../public/images/";
+import hero from "../../public/assets/penguin.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import {
@@ -31,6 +31,9 @@ import {
 } from "@/components/Icons";
 import Icon from "react-icons-kit";
 import { arrow_down } from "react-icons-kit/ikons/arrow_down";
+import arrow_right from "../../public/assets/right-arrow.png";
+
+import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 
 const FramerImage = motion(Image);
 
@@ -86,7 +89,7 @@ const Project = ({ title, type, img, link, github }) => {
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="p-12 relative w-full flex items-center justify-between  bg-light dark:bg-dark dark:border-light  lg:p-8  xs:p-4 ">
+    <article className="p-12 relative w-full flex items-center justify-between  bg-light dark:bg-dark dark:border-light  ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
@@ -138,6 +141,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 };
 
 export default function Home() {
+  const [mode, setMode] = useThemeSwitcher();
   return (
     <>
       <Head>
@@ -148,27 +152,66 @@ export default function Home() {
       <TransitionEffect />
 
       <main className="flex items-center min-h-screen ">
-        <Layout className="pt-0 md:pt-16 sm:pt-8 ">
+        <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className="flex flex-col items-center justify-between w-full lg:flex-col mb-4 ">
-            {/* HERO TEXT */}
+          <div className="flex flex-col px-4 py-12 dark:bg-gray-700 rounded-md">
+            {/* HERO CONTENT */}
+            {/* <Image src={hero} alt="hero" className="w-full h-full mb-6" /> */}
+            {/* <div className="flex justify-center items-center mb-6">
+              <button
+                onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                className={`w-12 flex items-center justify-center rounded-full  
+  ${mode === "dark" ? "bg-light text-dark" : "bg-dark text-light"}`}
+              >
+                {mode === "dark" ? (
+                  <SunIcon className={"fill-dark"} />
+                ) : (
+                  <MoonIcon className={"fill-dark"} />
+                )}
+              </button>
+            </div> */}
+            {/* <AnimatedText
+              text="Hironobu Nakae"
+              className="mb-3 xs:text-xl font-medium"
+            /> */}
             <AnimatedText
-              text="Hiro Nakae"
-              className="my-4  !text-left lg:!text-center 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl"
+              text="Frontend Developer | UI/UX Designer"
+              className=" xs:text-base font-medium "
             />
             <AnimatedText
-              text="Hi there. I'm a Front End Developer based in Eugene, Oregon."
-              className="!text-lg font-semibold md:!text-sm sm:!text-xs  !text-start lg:!text-center"
+              text="Let's create an experience that delivers results for your product."
+              className=" xs:text-[36px] mt-10 mb-14 xs:font-semibold leading-normal"
             />
+            <Link
+              href="/contact"
+              className="font-semibold border border-dark rounded-full flex justify-center w-[180px] items-center py-4 bg-light hover:bg-brandDark "
+            >
+              <span className="text-lg font-bold">Let's talk</span>
+              <Image
+                src={arrow_right}
+                alt="arrow"
+                className="w-auto h-4 ml-4 "
+              />
+            </Link>
+            {/* ARROW INDICATOR */}
+            <div className="font-semibold text-xs flex justify-center mt-12">
+              <div className="cursor-pointer">VIEW FEATURED PROJECT</div>
+            </div>
+            <div className="flex flex-col justify-center items-center p-4">
+              <Icon
+                icon={arrow_down}
+                className="cursor-pointer animate-bounce"
+              />
+            </div>
             {/* LOGOS */}
-            {/* <div className="flex items-center justify-start flex-wrap my-4 lg:!justify-center">
+            {/* <div className="flex items-center justify-start flex-wrap">
               <motion.div
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className="w-6 mr-4"
+                className="w-6 mr-4 dark:"
                 title="Next.js"
               >
-                <NextJS />
+                <NextjsLogo />
               </motion.div>
               <motion.div
                 whileHover={{ y: -2 }}
