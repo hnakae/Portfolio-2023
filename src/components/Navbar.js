@@ -18,7 +18,7 @@ const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
   return (
     <>
-      <Link href={href} className={`${className} relative group md:hidden`}>
+      <Link href={href} className={`${className} relative group sm:hidden`}>
         {title}
 
         <span
@@ -64,20 +64,20 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className=" z-10 w-full h-auto xs:px-4 xs:py-5 sm:px-8 sm:py-6 md:px-12 md:py-7 font-medium flex text-dark items-center justify-between dark:text-light    ">
+    <header className=" z-10 bg-brandWhite w-full h-auto xs:px-4 xs:py-5 sm:px-8 sm:py-6 md:px-12 md:py-7 lg:px-40 lg:py-8 font-medium flex text-dark items-center justify-between dark:text-light    ">
       {/* desktop */}
       <div className="w-full flex justify-between items-center">
         {/* <div className="absolute left-[50%] top-2 translate-x-[-50%] "> */}
         <Logo />
         {/* </div> */}
         <nav>
-          <CustomLink href="/works" title="Portfolio" className="mr-4" />
-          {/* <CustomLink href="/about" title="About" className="mx-4" /> */}
+          <CustomLink href="/works" title="Case Studies" className="mr-4" />
+          <CustomLink href="/about" title="About" className="mx-4" />
           {/* <CustomLink href="/blog" title="Blog" className="mx-4" /> */}
           <CustomLink
             href="/contact"
             title="Contact us"
-            className="mx-4 border border-dark p-4 dark:border-light hover:bg-brand dark:hover:bg-brandDark"
+            className="mx-4 border border-dark p-4 dark:border-light hover:bg-brandDark dark:hover:bg-brandDark"
           />
 
           <button
@@ -101,66 +101,6 @@ const Navbar = () => {
             ></span>
           </button>
         </nav>
-
-        {/* <nav className="flex items-center justify-center flex-wrap">
-          <motion.a
-            href="https://twitter.com"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mr-3"
-          >
-            <TwitterIcon />
-          </motion.a>
-          <motion.a
-            href="https://github.com"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3"
-          >
-            <GithubIcon />
-          </motion.a>
-          <motion.a
-            href="https://linkedin.com"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3"
-          >
-            <LinkedInIcon />
-          </motion.a>
-          <motion.a
-            href="https://pinterest.com"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3 bg-light rounded-full"
-          >
-            <PinterestIcon />
-          </motion.a>
-          <motion.a
-            href="https://dribbble.com"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 ml-3"
-          >
-            <DribbbleIcon />
-          </motion.a>
-
-          <button
-            onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 w-6  sm:mx-1 flex items-center justify-center rounded-full p-1 
-          ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
-          >
-            {mode === "dark" ? (
-              <SunIcon className={"fill-dark"} />
-            ) : (
-              <MoonIcon className={"fill-dark"} />
-            )}
-          </button>
-        </nav> */}
       </div>
       {/* mobile */}
       {isOpen ? (
@@ -226,54 +166,7 @@ const Navbar = () => {
               className=""
               toggle={handleClick}
             />
-            <div>
-              {/* <motion.a
-              href="https://twitter.com"
-              target={"_blank"}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mr-3 sm:mx-1"
-            >
-              <TwitterIcon />
-            </motion.a>
-            <motion.a
-              href="https://github.com"
-              target={"_blank"}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark"
-            >
-              <GithubIcon />
-            </motion.a>
-            <motion.a
-              href="https://linkedin.com"
-              target={"_blank"}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3 sm:mx-1"
-            >
-              <LinkedInIcon />
-            </motion.a>
-            <motion.a
-              href="https://pinterest.com"
-              target={"_blank"}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3 sm:mx-1 bg-light rounded-full"
-            >
-              <PinterestIcon />
-            </motion.a>
-            <motion.a
-              href="https://dribbble.com"
-              target={"_blank"}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 ml-3 sm:mx-1"
-            >
-              <DribbbleIcon />
-            </motion.a>
-*/}
-            </div>
+            <div></div>
           </nav>
         </motion.div>
       ) : null}

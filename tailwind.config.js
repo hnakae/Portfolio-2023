@@ -19,9 +19,14 @@ module.exports = {
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217
         coffee: "#f0e7db",
-        opaque: "#ffffff40",
+        opaque: "#ffffff90",
         brand: "#1582CC",
         brandDark: "#00d5ff",
+        brandPurple: "#ebdbff",
+        brandWhite: "#fff",
+        brandGray: "#f5f7ff",
+        brandBlue: "#F9FEFF",
+        brandBlue2: "#dbeefd",
       },
       animation: {
         "spin-slow": "spin 8s linear infinite",
@@ -59,7 +64,7 @@ module.exports = {
 
       // xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
-      // lg: { max: "1023px" },
+      lg: { max: "1366px" },
       // => @media (max-width: 1023px) { ... }
 
       md: { max: "1024px" },
