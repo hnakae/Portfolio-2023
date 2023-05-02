@@ -157,7 +157,7 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className=" flex flex-col lg:h-screen xs:px-4 sm:px-8 md:px-12 md:py-28 lg:px-40 lg:pt-28 bg-brandWhite rounded-md">
+          <div className=" flex flex-col min-h-screen xs:px-4 sm:px-8 md:px-12 md:py-28 lg:px-40 lg:pt-28 bg-brandBlue2 rounded-md">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
               className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
