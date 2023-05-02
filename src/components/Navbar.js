@@ -64,7 +64,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className=" z-10 w-full h-auto xs:px-4 xs:py-5 sm:px-8 sm:py-6 font-medium flex text-dark items-center justify-between dark:text-light    ">
+    <header className=" z-10 w-full h-auto xs:px-4 xs:py-5 sm:px-8 sm:py-6 md:px-12 md:py-7 font-medium flex text-dark items-center justify-between dark:text-light    ">
       {/* desktop */}
       <div className="w-full flex justify-between items-center">
         {/* <div className="absolute left-[50%] top-2 translate-x-[-50%] "> */}

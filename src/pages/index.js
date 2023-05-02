@@ -2,6 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "@/components/Layout";
 import project1 from "/public/images/wordpress.jpg";
+import project2 from "/public/images/mintyswap.jpg";
+import project3 from "/public/images/qtalent.jpg";
+import project4 from "/public/images/sage-mobile.jpg";
+import project5 from "/public/images/klasha-mobile.jpg";
 import hero from "../../public/assets/penguin.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
@@ -37,9 +41,9 @@ import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 
 const FramerImage = motion(Image);
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, summary, type, img, link, github }) => {
   return (
-    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-light dark:bg-dark dark:border-light p-6 relative xs:p-4 ">
+    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-light dark:bg-dark dark:border-light relative xs:p-4 ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" /> */}
 
       <Link
@@ -56,18 +60,16 @@ const Project = ({ title, type, img, link, github }) => {
         />
       </Link>
 
-      <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-brand dark:text-brandDark font-medium text-xl  lg:text-lg md:text-base">
-          {type}
-        </span>
+      <div className="w-full flex flex-col items-start justify-between mt-4 ">
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+          <span className="text-brand dark:text-brandDark font-medium text-xl  lg:text-lg md:text-base">
             {title}
-          </h2>
+          </span>
+          <h2 className="my-2 w-full  text-2xl font-bold ">{summary}</h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
@@ -75,12 +77,11 @@ const Project = ({ title, type, img, link, github }) => {
             target="_blank"
             className=" text-lg font-semibold underline md:text-base"
           >
-            Visit
+            Demo
           </Link>
-          <Link href={github} target="_blank" className="w-8 md:w-6">
-            {" "}
+          {/* <Link href={github} target="_blank" className="w-8 md:w-6">
             <GithubIcon />{" "}
-          </Link>
+          </Link> */}
         </div>
       </div>
     </article>
@@ -152,40 +153,21 @@ export default function Home() {
       <TransitionEffect />
 
       <main className="flex items-center min-h-screen ">
-        <Layout className="">
+        <Layout className="md:px-12">
           {/* FLEX CONTAINER */}
-          <div className="flex flex-col xs:px-4 sm:px-8 pt-12 dark:bg-gray-700 rounded-md">
-            {/* HERO CONTENT */}
-            {/* <Image src={hero} alt="hero" className="w-full h-full mb-6" /> */}
-            {/* <div className="flex justify-center items-center mb-6">
-              <button
-                onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                className={`w-12 flex items-center justify-center rounded-full  
-  ${mode === "dark" ? "bg-light text-dark" : "bg-dark text-light"}`}
-              >
-                {mode === "dark" ? (
-                  <SunIcon className={"fill-dark"} />
-                ) : (
-                  <MoonIcon className={"fill-dark"} />
-                )}
-              </button>
-            </div> */}
-            {/* <AnimatedText
-              text="Hironobu Nakae"
-              className="mb-3 xs:text-xl font-medium"
-            /> */}
+          <div className=" flex flex-col xs:px-4 sm:px-8  md:pt-28 dark:bg-gray-700 rounded-md">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
-              className=" xs:text-base sm:text-lg font-medium "
+              className=" xs:text-base sm:text-lg md:text-xl font-medium "
             />
             <AnimatedText
-              text="Let's create digital experiences that deliver results for your product."
-              className=" xs:text-[36px] sm:text-[44px] mt-10 mb-28 font-semibold leading-normal"
+              text="Hi there! I'm a design-minded front-end software engineer focused on building beautiful interfaces & experiences."
+              className=" xs:text-[36px] sm:text-[44px] md:text-[56px]  mt-10 mb-28 font-semibold leading-normal"
             />
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
               <Link
                 href="/contact"
-                className="font-semibold border border-dark rounded-full flex justify-center w-[180px] items-center py-4 bg-light hover:bg-brandDark "
+                className="font-semibold border border-dark rounded-full flex justify-center w-[180px] items-center py-4 bg-light hover:bg-brandDark mb-6"
               >
                 <span className="text-lg font-bold">Let's talk</span>
                 <Image
@@ -199,98 +181,16 @@ export default function Home() {
             <div className="font-semibold text-xs flex justify-center mt-6">
               <div className="cursor-pointer">VIEW FEATURED PROJECT</div>
             </div>
-            <div className="flex flex-col justify-center items-center p-4 mb-6">
+            <div className="flex flex-col justify-center items-center p-4 mb-6 md:mb-12">
               <Icon
                 icon={arrow_down}
                 className="cursor-pointer animate-bounce"
               />
             </div>
-            {/* LOGOS */}
-            {/* <div className="flex items-center justify-start flex-wrap">
-              <motion.div
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-6 mr-4 dark:"
-                title="Next.js"
-              >
-                <NextjsLogo />
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-6 mx-4"
-                title="React.js"
-              >
-                <ReactIcon />
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-6 mx-4"
-                title="Typescript"
-              >
-                <TypescriptIcon />
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-6 mx-4"
-                title="Tailwind CSS"
-              >
-                <TailwindIcon />
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-6 mx-4"
-                title="Vercel"
-              >
-                <VercelLogo />
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-6 mx-4"
-                title="Vercel"
-              >
-                <Image
-                  src="/assets/logos/logo-sm.png"
-                  width={48}
-                  height={48}
-                  alt="auth"
-                  title="NextAuth.js"
-                />
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-6 ml-4"
-                title="Prisma ORM"
-              >
-                <PrismaLogo />
-              </motion.div>
-            </div> */}
-
-            {/* <div className="flex items-center self-start mt-2 lg:self-center">
-              <Link
-                href="/dummy.pdf"
-                target={"_blank"}
-                className="h-[50px] w-[150px] flex items-center bg-dark text-light p-2.5 px-6 mb-4 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
-                download={true}
-              >
-                Resume <LinkArrow className={"w-6 ml-1"} />
-              </Link>
-              <Link
-                href="/contact"
-                className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
-              >
-                HIRE ME
-              </Link>
-            </div> */}
           </div>
           {/* GRID CONTAINER */}
-          <div className="grid grid-cols-12 ">
-            <div className="col-span-12">
+          <div className="grid grid-cols-12 gap-10 mb-36">
+            <div className="col-span-12 md:hidden">
               <FeaturedProject
                 title="New Paradigm"
                 summary="A full-stack web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, Prisma, PlanetScale, Cypress, and Clerk. (Bring in icons for the technologies)"
@@ -312,9 +212,8 @@ export default function Home() {
             </div>
             <div className="col-span-6">
               <Project
-                title="Media Platform: Curated Lessons for Go Players(Coming Soon)"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-page transitions, cool background effects, unique design and it is mobile responsive."
+                title="Project Name"
+                summary="A short description"
                 link="/"
                 type="Project"
                 img={project1}
@@ -323,23 +222,66 @@ page transitions, cool background effects, unique design and it is mobile respon
             </div>
             <div className="col-span-6">
               <Project
-                title="Media Platform: Curated Lessons for Go Players(Coming Soon)"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-page transitions, cool background effects, unique design and it is mobile responsive."
+                title="Project Name"
+                summary="A short description"
                 link="/"
                 type="Project"
-                img={project1}
+                img={project2}
+                github="/"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="Project Name"
+                summary="A short description"
+                link="/"
+                type="Project"
+                img={project3}
+                github="/"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="Project Name"
+                summary="A short description"
+                link="/"
+                type="Project"
+                img={project4}
+                github="/"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="Project Name"
+                summary="A short description"
+                link="/"
+                type="Project"
+                img={project5}
                 github="/"
               />
             </div>
           </div>
+          {/* Skills section */}
+          <div className="flex justify-center">
+            <AnimatedText
+              text="Skills"
+              className=" md:text-[38px]  mt-10 mb-12 font-semibold leading-normal"
+            />
+            {/* <div>
+              <div className="flex justify-center">
+              
+              </div>
+            </div> */}
+          </div>
+          {/* Contact section */}
+          <div className="flex justify-center">
+            <AnimatedText
+              text="Get in touch"
+              className=" md:text-[38px]  mt-10 mb-12 font-semibold leading-normal"
+            />
+          </div>
         </Layout>
       </main>
-      {/* <HireMe text="Hire me!" /> */}
-
-      {/* <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          <Image src={penguin} alt="HiroNakae" className="w-full h-auto" />
-        </div> */}
     </>
   );
 }
