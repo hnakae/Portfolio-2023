@@ -160,11 +160,11 @@ export default function Home() {
           <div className=" flex flex-col h-full lg:max-h-screen xs:px-4 sm:px-8 md:px-12 md:py-28 lg:px-40 lg:pt-28 bg-brandWhite rounded-md">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
-              className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium "
+              className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a front-end software engineer based in Eugene, Oregon."
-              className=" xs:text-[36px] sm:text-[44px] md:text-[56px] lg:text-[70px]  mt-10 mb-28 font-semibold leading-normal"
+              className=" xs:text-[36px] sm:text-[44px] md:text-[56px] lg:text-[70px]  mb-28 font-semibold leading-normal"
             />
             <div className="flex justify-center ">
               <Link
