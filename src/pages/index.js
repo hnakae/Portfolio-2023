@@ -157,19 +157,19 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className=" flex flex-col min-h-screen xs:px-4 sm:px-8 md:px-12 md:py-28 lg:px-40 lg:pt-28 bg-brandBlue2 rounded-md">
+          <div className=" flex flex-col h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-60 bg-brandBlue2 ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
               className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a front-end software engineer based in Eugene, Oregon."
-              className=" xs:text-[36px] sm:text-[44px] md:text-[56px] lg:text-[70px]  mb-28 font-semibold leading-normal"
+              className=" xs:text-[36px] sm:text-[44px] md:text-[56px] lg:text-[56px]  mb-28 font-semibold leading-normal"
             />
             <div className="flex justify-center ">
               <Link
                 href="/contact"
-                className="font-semibold border border-dark flex justify-center w-[180px] items-center py-4 bg-brandWhite hover:bg-brandDark  mb-6 lg:mb-24 "
+                className="font-semibold border border-dark flex justify-center w-[180px] items-center py-4  bg-brandBlue2 hover:bg-brandDark  mb-6 lg:mb-24 "
               >
                 <span className="text-lg font-bold ">Let's talk</span>
                 <Image
@@ -180,7 +180,7 @@ export default function Home() {
               </Link>
             </div>
             {/* ARROW INDICATOR */}
-            <div className="font-semibold text-xs lg:text-sm flex justify-center mt-6">
+            <div className="font-semibold text-xs lg:text-sm flex justify-center mt-6 ">
               <div className="cursor-pointer">VIEW FEATURED PROJECT</div>
             </div>
             <div className="flex flex-col justify-center items-center p-4 mb-6 md:mb-12 lg:mb-16">
@@ -258,7 +258,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center ">
               <div className="text-3xl font-normal text-center rounded-[10px] bg-brandWhite w-[auto] h-[auto] px-4 py-6  mx-8">
-                Hi there! My name is Hiro Nakae and I'm a Frontend Web Developer
+                Hi there! My name is Hiro Nakae and I'm a Front-end Developer
                 with a passion for UX/UI.
               </div>
             </div>
@@ -295,7 +295,7 @@ export default function Home() {
                   <Image src={skill2} alt="skill" height={100} />
                 </div>
                 <div className="flex justify-center">
-                  <div className="text-xl font-bold mb-4 lg:text-2xl">
+                  <div className="md:text-xl font-bold mb-4 lg:text-2xl">
                     Frameworks
                   </div>
                 </div>
@@ -312,7 +312,7 @@ export default function Home() {
                   <Image src={skill3} alt="skill" height={100} />
                 </div>
                 <div className="flex justify-center">
-                  <div className="text-xl font-bold mb-4 lg:text-2xl">
+                  <div className="md:text-xl font-bold mb-4 lg:text-2xl">
                     Tools
                   </div>
                 </div>
@@ -349,13 +349,13 @@ export default function Home() {
             <div className="flex justify-center">
               <AnimatedText
                 text="Got a project in mind?"
-                className=" md:text-[38px] text-center mt-10 mb-16 font-semibold leading-normal"
+                className=" md:text-[38px] text-center mb-16 font-semibold leading-normal"
               />
             </div>
             <div className="flex justify-center">
               <Link
                 href="/contact"
-                className="font-semibold border z-20 border-dark  hover:bg-[yellow]  flex justify-center w-[180px] items-center py-4   mb-6"
+                className="font-semibold border z-20 border-dark  hover:bg-[yellow]  flex justify-center w-[180px] items-center py-4   mb-24"
               >
                 <div className="text-lg font-bold ">Let's Talk!</div>
               </Link>
