@@ -203,7 +203,7 @@ export default function Home() {
                 github="https://github.com/hnakae/NewParadigm"
               />
               {/* ARROW INDICATOR */}
-              <div className="font-semibold text-xs flex justify-center pb-4">
+              {/* <div className="font-semibold text-xs flex justify-center pb-4">
                 <div className="cursor-pointer">VIEW MORE PROJECTS</div>
               </div>
               <div className="flex flex-col justify-center items-center p-4">
@@ -211,7 +211,7 @@ export default function Home() {
                   icon={arrow_down}
                   className="cursor-pointer animate-bounce"
                 />
-              </div>
+              </div> */}
             </div>
             <div className="col-span-6 md:block lg:hidden">
               <Project
