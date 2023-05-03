@@ -164,7 +164,7 @@ export default function Home() {
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
-              className=" xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl  mb-10 pr-32 font-semibold leading-normal"
+              className=" xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mb-10 pr-32 font-semibold leading-normal"
             />
             {/* Button */}
             {/* <div className="flex justify-center ">
