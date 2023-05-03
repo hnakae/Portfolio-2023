@@ -64,7 +64,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className=" z-10 bg-brandBlue2 w-full h-auto xs:px-4 xs:py-5 sm:px-8 sm:py-6 md:px-12 md:py-7 lg:px-40 lg:py-8 font-medium flex text-dark items-center justify-between dark:text-light   absolute ">
+    <header className=" z-10 bg-brandWhite w-full h-auto xs:px-4 xs:py-5 sm:px-8 sm:py-6 md:px-12 md:py-7 lg:px-40 lg:py-8 font-medium flex text-dark items-center justify-between dark:text-light   absolute ">
       {/* desktop */}
       <div className="w-full flex justify-between items-center">
         {/* <div className="absolute left-[50%] top-2 translate-x-[-50%] "> */}
@@ -78,7 +78,7 @@ const Navbar = () => {
           <CustomLink
             href="/contact"
             title="Contact us"
-            className="mx-4 border border-dark p-4 dark:border-light hover:bg-brandDark dark:hover:bg-brandDark"
+            className="mx-4 border border-dark p-4 dark:border-light hover:bg-black hover:text-brandWhite dark:hover:bg-brandDark"
           />
 
           <button

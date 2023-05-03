@@ -42,13 +42,13 @@ import { arrow_down } from "react-icons-kit/ikons/arrow_down";
 import arrow_right from "../../public/assets/right-arrow.png";
 
 import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
 
 const FramerImage = motion(Image);
 
 const Project = ({ title, summary, type, img, link, github }) => {
   return (
-    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-brandBlue2 p-4 dark:bg-dark dark:border-light relative xs:p-4 ">
+    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-brandBlue p-4 dark:bg-dark dark:border-light relative xs:p-4  ">
       <Link
         href={link}
         target="_blank"
@@ -159,23 +159,23 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className=" flex flex-col landscape:lg:min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-44 bg-brandBlue2 ">
+          <div className=" flex flex-col landscape:lg:min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-44 bg-brandWhite ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
               className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
-              className=" xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mb-10 md:pr-44 font-semibold leading-normal"
+              className=" xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl  md:pr-44 font-semibold leading-normal mb-36"
             />
 
             {/* Button */}
             <div className="flex justify-center mb-36">
               <Link
-                href="/contact"
-                className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandBlue2 hover:bg-brandDark   "
+                href="/algo"
+                className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandWhite hover:bg-brandDark   "
               >
-                <span className="text-lg font-bold ">Let's talk</span>
+                <span className="text-lg font-bold ">Let's Code</span>
                 <Image
                   src={arrow_right}
                   alt="arrow"
@@ -205,18 +205,8 @@ export default function Home() {
                 img={project1}
                 github="https://github.com/hnakae/NewParadigm"
               />
-              {/* ARROW INDICATOR */}
-              {/* <div className="font-semibold text-xs flex justify-center pb-4">
-                <div className="cursor-pointer">VIEW MORE PROJECTS</div>
-              </div>
-              <div className="flex flex-col justify-center items-center p-4">
-                <Icon
-                  icon={arrow_down}
-                  className="cursor-pointer animate-bounce"
-                />
-              </div> */}
             </div>
-            <div className="col-span-6 md:block lg:hidden">
+            <div className="col-span-6 md:block lg:hidden ">
               <Project
                 title="Fully Stacked Web Application"
                 summary="Tool with ChatGPT Integration"
@@ -251,7 +241,7 @@ export default function Home() {
             </div>
           </div>
           {/* ABOUT SECTION */}
-          <div className="bg-brandBlue2 h-[auto] py-16 flex flex-col md:px-12 lg:px-40">
+          <div className="bg-brandGray h-[auto] py-16 flex flex-col md:px-12 lg:px-40">
             <div className="flex justify-center md:text-4xl lg:text-5xl font-semibold mb-8">
               About Me
             </div>
@@ -361,7 +351,7 @@ export default function Home() {
             <div className="flex justify-center">
               <Link
                 href="/contact"
-                className="font-semibold border z-20 border-dark  hover:bg-[yellow]  flex justify-center w-[180px] items-center py-4   mb-24 sm:rounded-full"
+                className="font-semibold border z-20 border-dark  hover:bg-black hover:text-brandWhite  flex justify-center w-[180px] items-center py-4   mb-24 sm:rounded-full"
               >
                 <div className="text-lg font-bold ">Let's Talk!</div>
               </Link>
