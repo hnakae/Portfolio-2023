@@ -74,6 +74,7 @@ const Navbar = () => {
           <CustomLink href="/works" title="Case Studies" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           {/* <CustomLink href="/blog" title="Blog" className="mx-4" /> */}
+          <CustomLink href="/algo" title="Algo" className="mx-4" />
           <CustomLink
             href="/contact"
             title="Contact us"

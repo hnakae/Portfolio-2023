@@ -42,6 +42,7 @@ import { arrow_down } from "react-icons-kit/ikons/arrow_down";
 import arrow_right from "../../public/assets/right-arrow.png";
 
 import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
+import { useRef, useState } from "react";
 
 const FramerImage = motion(Image);
 
@@ -145,6 +146,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 export default function Home() {
   const [mode, setMode] = useThemeSwitcher();
+
   return (
     <>
       <Head>
@@ -157,7 +159,7 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className=" flex flex-col min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-44 bg-brandBlue2 ">
+          <div className=" flex flex-col landscape:lg:min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-44 bg-brandBlue2 ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
               className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
@@ -166,6 +168,7 @@ export default function Home() {
               text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
               className=" xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mb-10 md:pr-44 font-semibold leading-normal"
             />
+
             {/* Button */}
             <div className="flex justify-center mb-36">
               <Link
@@ -259,8 +262,10 @@ export default function Home() {
             </div>
             <div className="flex justify-center my-8">
               <div className="text-3xl font-normal text-center rounded-[10px] bg-brandWhite w-[auto] h-[auto] px-4 py-6  mx-8">
-                Hi there! My name is Hiro Nakae and I'm a Front-end Developer
-                with a passion for UX/UI.
+                Hi there! My name is Hiro Nakae (中江玄信). When I'm not coding,
+                I like to play Go (囲碁), a Japanese board game. I am currently
+                looking for a full-time position as a Front-End Software
+                Engineer.
               </div>
             </div>
           </div>
