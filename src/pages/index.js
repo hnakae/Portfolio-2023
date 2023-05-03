@@ -166,6 +166,7 @@ export default function Home() {
               text="Hello! I'm Hiro Nakae, a front-end software engineer based in Eugene, Oregon."
               className=" xs:text-[36px] sm:text-[44px] md:text-[56px] lg:text-[56px]  mb-28 font-semibold leading-normal"
             />
+            {/* Button */}
             <div className="flex justify-center ">
               <Link
                 href="/contact"
