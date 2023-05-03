@@ -160,7 +160,7 @@ export default function Home() {
           <div className=" flex flex-col min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-44 bg-brandBlue2 ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
-              className=" xs:text-base sm:text-lg md:text-xl lg:text-xl font-medium mb-10"
+              className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
