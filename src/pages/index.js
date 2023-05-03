@@ -47,7 +47,7 @@ const FramerImage = motion(Image);
 
 const Project = ({ title, summary, type, img, link, github }) => {
   return (
-    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-brandBlue hover:bg-brandPurple  dark:bg-dark dark:border-light relative xs:p-4 ">
+    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-brandBlue2 p-4 dark:bg-dark dark:border-light relative xs:p-4 ">
       <Link
         href={link}
         target="_blank"
@@ -73,7 +73,7 @@ const Project = ({ title, summary, type, img, link, github }) => {
           </span>
           <h2 className="my-2 w-full  text-2xl font-bold ">{summary}</h2>
         </Link>
-        <div className="w-full mt-2 flex items-center justify-between">
+        <div className="w-full mt-2 flex items-center justify-start">
           <Link
             href={link}
             target="_blank"
@@ -164,13 +164,13 @@ export default function Home() {
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
-              className=" xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mb-10 pr-32 font-semibold leading-normal"
+              className=" xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mb-10 md:pr-44 font-semibold leading-normal"
             />
             {/* Button */}
-            {/* <div className="flex justify-center ">
+            <div className="flex justify-center mb-6">
               <Link
                 href="/contact"
-                className="font-semibold border border-dark flex justify-center w-[180px] items-center py-4  bg-brandBlue2 hover:bg-brandDark  mb-6 lg:mb-24 "
+                className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandBlue2 hover:bg-brandDark   "
               >
                 <span className="text-lg font-bold ">Let's talk</span>
                 <Image
@@ -179,7 +179,7 @@ export default function Home() {
                   className="w-auto h-4 ml-4 "
                 />
               </Link>
-            </div> */}
+            </div>
             {/* ARROW INDICATOR */}
             <div className="font-semibold text-xs lg:text-sm flex justify-center">
               <div className="cursor-pointer">VIEW FEATURED PROJECT</div>
@@ -249,15 +249,15 @@ export default function Home() {
           </div>
           {/* ABOUT SECTION */}
           <div className="bg-brandBlue2 h-[auto] py-16 flex flex-col md:px-12 lg:px-40">
-            <div className="flex justify-center md:text-4xl lg:text-5xl font-semibold mb-16">
+            <div className="flex justify-center md:text-4xl lg:text-5xl font-semibold mb-8">
               About Me
             </div>
             <div className="flex justify-center">
-              <div className=" bg-brandPurple w-[150px] h-[150px] rounded-full mb-6">
+              <div className=" bg-brandPurple w-[150px] h-[150px] rounded-full my-8">
                 <Image src={hero} alt="profile" width={150} height={150} />
               </div>
             </div>
-            <div className="flex justify-center ">
+            <div className="flex justify-center my-8">
               <div className="text-3xl font-normal text-center rounded-[10px] bg-brandWhite w-[auto] h-[auto] px-4 py-6  mx-8">
                 Hi there! My name is Hiro Nakae and I'm a Front-end Developer
                 with a passion for UX/UI.
@@ -356,7 +356,7 @@ export default function Home() {
             <div className="flex justify-center">
               <Link
                 href="/contact"
-                className="font-semibold border z-20 border-dark  hover:bg-[yellow]  flex justify-center w-[180px] items-center py-4   mb-24"
+                className="font-semibold border z-20 border-dark  hover:bg-[yellow]  flex justify-center w-[180px] items-center py-4   mb-24 sm:rounded-full"
               >
                 <div className="text-lg font-bold ">Let's Talk!</div>
               </Link>
