@@ -167,7 +167,7 @@ export default function Home() {
               className=" xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl  mb-10 md:pr-44 font-semibold leading-normal"
             />
             {/* Button */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-40">
               <Link
                 href="/contact"
                 className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandBlue2 hover:bg-brandDark   "
