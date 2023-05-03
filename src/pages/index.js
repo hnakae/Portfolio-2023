@@ -92,7 +92,7 @@ const Project = ({ title, summary, type, img, link, github }) => {
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className=" mb-6  relative w-full flex items-center justify-between  bg-brandBlue hover:bg-brandPurple px-8 py-12 dark:bg-dark dark:border-light  ">
+    <article className=" mb-6  relative w-full flex items-center justify-between bg-brandPurple px-8 py-12 dark:bg-dark dark:border-light  ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
 
       <div className="h-full flex flex-col items-start justify-between w-1/2 ">
@@ -120,7 +120,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             target="_blank"
             className="ml-4  h-[50px] w-auto  flex items-center  p-2 px-6 text-sm font-semibold dark:bg-dark dark:text-light "
           >
-            DEMO <LinkArrow className={"w-6 ml-1 p-4"} />
+            DEMO <LinkArrow className={"md:w-6 lg:w-6 ml-1 p-4"} />
           </Link>
         </div>
       </div>
@@ -157,17 +157,17 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className=" flex flex-col min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-60 bg-brandBlue2 ">
+          <div className=" flex flex-col min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-44 bg-brandBlue2 ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
-              className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
+              className=" xs:text-base sm:text-lg md:text-xl lg:text-xl font-medium mb-10"
             />
             <AnimatedText
-              text="Hello! I'm Hiro Nakae, a front-end software engineer based in Eugene, Oregon."
-              className=" xs:text-[36px] sm:text-[44px] md:text-[56px] lg:text-[56px]  mb-28 font-semibold leading-normal"
+              text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
+              className=" xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl  mb-10 pr-32 font-semibold leading-normal"
             />
             {/* Button */}
-            <div className="flex justify-center ">
+            {/* <div className="flex justify-center ">
               <Link
                 href="/contact"
                 className="font-semibold border border-dark flex justify-center w-[180px] items-center py-4  bg-brandBlue2 hover:bg-brandDark  mb-6 lg:mb-24 "
@@ -179,9 +179,9 @@ export default function Home() {
                   className="w-auto h-4 ml-4 "
                 />
               </Link>
-            </div>
+            </div> */}
             {/* ARROW INDICATOR */}
-            <div className="font-semibold text-xs lg:text-sm flex justify-center mt-6 ">
+            <div className="font-semibold text-xs lg:text-sm flex justify-center">
               <div className="cursor-pointer">VIEW FEATURED PROJECT</div>
             </div>
             <div className="flex flex-col justify-center items-center p-4 mb-6 md:mb-12 lg:mb-16">
