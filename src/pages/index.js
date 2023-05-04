@@ -27,7 +27,7 @@ import {
 } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
-import { motion } from "framer-motion";
+import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import {
   TwitterIcon,
   GithubIcon,
@@ -42,13 +42,38 @@ import { arrow_down } from "react-icons-kit/ikons/arrow_down";
 import arrow_right from "../../public/assets/right-arrow.png";
 
 import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
+import { useEffect, useRef } from "react";
 // import { useRef, useState } from "react";
 
 const FramerImage = motion(Image);
 
+const AnimatedNumbers = ({ value }) => {
+  const ref = useRef(null);
+
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue]);
+
+  useEffect(() => {
+    springValue.on("change", (latest) => {
+      if (ref.current && latest.toFixed(2) <= value) {
+        ref.current.textContent = latest.toFixed(2);
+      }
+    });
+  }, [springValue, value]);
+
+  return <span ref={ref}></span>;
+};
+
 const Project = ({ title, summary, type, img, link, github }) => {
   return (
-    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-brandBlue p-4 dark:bg-dark dark:border-light relative xs:p-4  ">
+    <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-brandBlue py-4 dark:bg-dark dark:border-light relative xs:p-4  ">
       <Link
         href={link}
         target="_blank"
@@ -113,15 +138,15 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           {summary}
         </p>
         <div className="mt-2 flex items-center sm:hidden">
-          <Link href={github} target="_blank" className="w-10">
-            <GithubIcon />
-          </Link>
           <Link
             href={link}
             target="_blank"
-            className="ml-4  h-[50px] w-auto  flex items-center  p-2 px-6 text-sm font-semibold dark:bg-dark dark:text-light "
+            className="mr-4 outline rounded-full h-[50px] w-auto  flex items-center  p-2 px-6 text-sm font-semibold dark:bg-dark dark:text-light "
           >
-            DEMO <LinkArrow className={"md:w-6 lg:w-6 ml-1 p-4"} />
+            DEMO
+          </Link>
+          <Link href={github} target="_blank" className="w-10">
+            <GithubIcon />
           </Link>
         </div>
       </div>
@@ -159,21 +184,21 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className=" flex flex-col landscape:lg:min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-40 pt-44 bg-brandWhite ">
+          <div className=" flex flex-col  xs:px-4 sm:px-8 md:px-12 lg:px-36 landscape:lg:pt-60 md:pt-64 bg-brandWhite ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
-              className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
+              className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-normal mb-10"
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
-              className=" xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl  md:pr-44 font-semibold leading-normal mb-36"
+              className=" xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl  md:pr-56 lg:pr-44 font-semibold lg:leading-normal md:leading-normal"
             />
 
             {/* Button */}
-            <div className="flex justify-center mb-36">
+            <div className="flex justify-center">
               <Link
                 href="/algo"
-                className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandWhite hover:bg-brandDark   "
+                className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandWhite hover:bg-brandDark  md:mb-6 md:mt-12 lg:mt-24 lg:mb-20"
               >
                 <span className="text-lg font-bold ">Let's Code</span>
                 <Image
@@ -184,10 +209,10 @@ export default function Home() {
               </Link>
             </div>
             {/* ARROW INDICATOR */}
-            <div className="font-semibold text-xs lg:text-sm flex justify-center">
+            <div className="font-semibold text-xs lg:text-sm flex justify-center md:mt-6 ">
               <div className="cursor-pointer">VIEW FEATURED PROJECT</div>
             </div>
-            <div className="flex flex-col justify-center items-center p-4 mb-6 md:mb-12 lg:mb-16">
+            <div className="flex flex-col justify-center items-center p-4 md:mb-16 lg:mb-20">
               <Icon
                 icon={arrow_down}
                 className="cursor-pointer animate-bounce"
@@ -195,7 +220,7 @@ export default function Home() {
             </div>
           </div>
           {/* GRID CONTAINER */}
-          <div className="grid grid-cols-12 gap-10  px-12 md:px-12 lg:px-40 lg:py-24  ">
+          <div className="grid grid-cols-12  px-12 md:px-12 lg:px-20 gap-10 ">
             <div className="col-span-12 md:hidden">
               <FeaturedProject
                 title="Fully Stacked ChatGPT Integration"
@@ -206,7 +231,7 @@ export default function Home() {
                 github="https://github.com/hnakae/NewParadigm"
               />
             </div>
-            <div className="col-span-6 md:block lg:hidden ">
+            <div className="col-span-6 md:block lg:hidden">
               <Project
                 title="Fully Stacked Web Application"
                 summary="Tool with ChatGPT Integration"
@@ -240,108 +265,146 @@ export default function Home() {
               {/* empty */}
             </div>
           </div>
-          {/* ABOUT SECTION */}
-          <div className="bg-brandGray h-[auto] py-16 flex flex-col md:px-12 lg:px-40">
-            <div className="flex justify-center md:text-4xl lg:text-5xl font-semibold mb-8">
-              About Me
-            </div>
-            <div className="flex justify-center">
-              <div className=" bg-brandPurple w-[150px] h-[150px] rounded-full my-8">
-                <Image src={hero} alt="profile" width={150} height={150} />
-              </div>
-            </div>
-            <div className="flex justify-center my-8">
-              <div className="text-3xl font-normal text-center rounded-[10px] bg-brandWhite w-[auto] h-[auto] px-4 py-6  mx-8">
-                Hi there! My name is Hiro Nakae (中江玄信). When I'm not coding,
-                I like to play Go (囲碁), a Japanese board game. I am currently
-                looking for a full-time position as a Front-End Software
-                Engineer.
-              </div>
-            </div>
-          </div>
           {/* Skills section */}
           <div className="flex flex-col md:px-12 lg:px-40 py-16">
             <div className="flex justify-center">
               <AnimatedText
-                text="Skills"
-                className=" md:text-4xl lg:text-5xl text-center mt-10 mb-16 font-semibold leading-normal"
+                text="This is the technology stack that I use on a daily basis."
+                className=" md:text-4xl lg:text-5xl text-center mt-10 mb-32 font-semibold md:leading-normal lg:leading-normal lg:px-44"
               />
             </div>
             <div className="grid grid-cols-12 gap-10 mb-12">
               <div className="col-span-3">
                 <div className="flex justify-center mb-6">
-                  <Image src={skill1} alt="skill" height={100} />
+                  <Image src={skill1} alt="skill" height={65} />
                 </div>
                 <div className="flex justify-center">
-                  <div className="md:text-xl lg:text-2xl font-bold mb-4">
-                    Languages
-                  </div>
+                  <div className="text-2xl font-bold mb-6">Languages</div>
                 </div>
                 <div className="flex justify-center">
-                  <ul className="md:text-lg lg:text-xl font-semibold text-center">
-                    <li>JavaScript (ES6)</li>
-                    <li>TypeScript</li>
-                    <li>HTML</li>
+                  <ul className="text-xl font-semibold text-left ">
+                    <li className="mb-4">JavaScript&nbsp;(ES6)</li>
+                    <li className="mb-4">TypeScript</li>
+                    <li className="mb-4">HTML</li>
                     <li>CSS/Sass</li>
                   </ul>
                 </div>
               </div>
               <div className="col-span-3">
                 <div className="flex justify-center mb-6">
-                  <Image src={skill2} alt="skill" height={100} />
+                  <Image src={skill2} alt="skill" height={65} />
                 </div>
                 <div className="flex justify-center">
-                  <div className="md:text-xl font-bold mb-4 lg:text-2xl">
-                    Frameworks
-                  </div>
+                  <div className="text-2xl font-bold mb-6">Frameworks</div>
                 </div>
                 <div className="flex justify-center">
-                  <ul className="md:text-lg lg:text-xl font-semibold text-center">
-                    <li>Next</li>
-                    <li>React</li>
-                    <li>Tailwind CSS</li>
+                  <ul className="text-xl font-semibold text-left">
+                    <li className="mb-4">Next</li>
+                    <li className="mb-4">React</li>
+                    <li>Tailwind&nbsp;CSS</li>
                   </ul>
                 </div>
               </div>
               <div className="col-span-3">
                 <div className="flex justify-center mb-6">
-                  <Image src={skill3} alt="skill" height={100} />
+                  <Image src={skill3} alt="skill" height={65} />
                 </div>
                 <div className="flex justify-center">
-                  <div className="md:text-xl font-bold mb-4 lg:text-2xl">
-                    Tools
-                  </div>
+                  <div className="text-2xl font-bold mb-6">Tools</div>
                 </div>
                 <div className="flex justify-center">
-                  <ul className="md:text-lg lg:text-xl font-semibold text-center">
-                    <li>Bash</li>
-                    <li>Git & Github</li>
-                    <li>Chrome DevTools</li>
+                  <ul className="text-xl font-semibold text-left">
+                    <li className="mb-4">React&nbsp;Query</li>
+                    <li className="mb-4">tRPC</li>
+                    <li className="mb-4">MSSMS</li>
+                    <li>AWS&nbsp;S3 </li>
                   </ul>
                 </div>
               </div>
               <div className="col-span-3">
                 <div className="flex justify-center mb-6">
-                  <Image src={skill4} alt="skill" height={100} />
+                  <Image src={skill4} alt="skill" height={65} />
                 </div>
                 <div className="flex justify-center">
-                  <div className="text-xl font-bold mb-4  lg:text-2xl">
-                    Design
-                  </div>
+                  <div className="text-2xl font-bold mb-6">Design</div>
                 </div>
                 <div className="flex justify-center">
-                  <ul className="md:text-lg lg:text-xl font-semibold text-center">
-                    <li>Figma</li>
-                    <li>Wireframing</li>
-                    <li>Prototyping</li>
+                  <ul className="text-xl font-semibold text-left">
+                    <li className="mb-4">Figma</li>
+                    <li className="mb-4">Wireframing</li>
+                    <li className="mb-4">Prototyping</li>
                     <li>Mockup</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+          {/* ABOUT SECTION */}
+          <div className=" h-[auto] py-16 flex flex-col md:px-12 lg:px-40">
+            <div className="flex justify-center md:text-4xl lg:text-5xl font-semibold mb-16">
+              About Me
+            </div>
+
+            <div className="flex bg-brandBlue rounded-[10px] hover:bg-brandGray">
+              <div className="flex justify-center items-center  pl-12">
+                <div className=" bg-brandPurple w-[150px] h-[150px] rounded-full ">
+                  <Image src={hero} alt="profile" width={150} height={150} />
+                </div>
+              </div>
+              <div className="flex justify-center my-8">
+                <div className="text-xl font-medium text-center rounded-[10px] w-[auto] h-[auto] px-4 py-6  mx-8">
+                  "Hi there! My name is Hiro Nakae and I'm currently looking
+                  into some interesting topics such as: API development with
+                  tRPC, and React State Management with tools like React Query.
+                  State management frameworks and API access libraries are
+                  something new to me and I'm excited to learn more about
+                  them.""
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* AWARDS SECTION */}
+          <div className="h-screen bg-brandGray">
+            <div className=" flex items-center justify-center ">
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={57} />%
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  Win Percentage
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={3.83} />
+                  :1
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  KDA
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={292} />
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  Games Played
+                </h2>
+              </div>
+            </div>
+          </div>
+          {/* FAQ */}
+          <div className="h-screen bg-brandWhite">
+            <div>Frequently asked questions</div>
+          </div>
+          {/* Blogs */}
+          <div className="h-screen bg-brandWhite">
+            <div>Continue reading</div>
+          </div>
           {/* Contact section */}
-          <div className="flex flex-col bg-brandBlue2 md:h-[400px] py-24 lg:px-40">
+          <div className="flex flex-col bg-neutral-100 md:h-[400px] py-24 lg:px-40">
             <div className="flex justify-center">
               <AnimatedText
                 text="Got a project in mind?"
@@ -351,12 +414,14 @@ export default function Home() {
             <div className="flex justify-center">
               <Link
                 href="/contact"
-                className="font-semibold border z-20 border-dark  hover:bg-black hover:text-brandWhite  flex justify-center w-[180px] items-center py-4   mb-24 sm:rounded-full"
+                className="font-semibold z-20 text-white bg-red-400  hover:bg-black hover:text-brandWhite  flex justify-center w-[180px] items-center py-4   mb-24 sm:rounded-full"
               >
                 <div className="text-lg font-bold ">Let's Talk!</div>
               </Link>
             </div>
           </div>
+          {/* footer nav */}
+          <div className="h-[455px] bg-brandWhite"></div>
         </Layout>
       </main>
     </>

@@ -76,32 +76,7 @@ const algo = () => {
                   <div className="p-4 outline ">Output(DEFGH) : {output}</div>
                 </div>
               </div>
-              <div className="flex justify-center col-span-3">
-                <div className="w-[300px]  flex flex-col outline p-4">
-                  <h1 className="text-2xl mb-4">Longest Non Repeating Char</h1>
-                  <form
-                    className="flex flex-col "
-                    onSubmit={getLongestNonRepeatingChar}
-                  >
-                    <label className="p-4 outline mb-4">
-                      Sample Input: ABCDDDEFGHI
-                    </label>
-                    <input
-                      className="outline mb-4 p-4"
-                      type="text"
-                      ref={input}
-                      placeholder="Enter string"
-                    />
-                    <button
-                      className="p-4 mb-6 rounded-full outline cursor-pointer"
-                      type="submit"
-                    >
-                      Submit
-                    </button>
-                  </form>
-                  <div className="p-4 outline ">Output(DEFGH) : {output}</div>
-                </div>
-              </div>
+              <div className="flex justify-center col-span-3"></div>
             </div>
           </div>
         </Layout>

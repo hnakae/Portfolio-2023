@@ -9,7 +9,7 @@ const Logo = () => {
     <div className="flex items-center justify-center ">
       <MotionLink
         href="/"
-        className="xs:w-8 xs:h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-16 lg:h-16 bg-dark flex items-center justify-center rounded-full text-sm  text-light font-bold border border-solid border-transparent dark:border-light"
+        className="xs:w-8 xs:h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-24 lg:landscape:pl-5 lg:h-10 md:bg-dark flex items-center justify-center rounded-full text-sm lg:text-2xl lg:text-dark md:text-light font-bold border border-solid border-transparent dark:border-light"
         whileHover={{
           backgroundColor: [
             "#121212",
@@ -22,7 +22,8 @@ const Logo = () => {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        <span className="">HN</span>
+        <span className="md:block lg:hidden">HN</span>
+        <span className="md:hidden">HiroNakae</span>
       </MotionLink>
     </div>
   );
