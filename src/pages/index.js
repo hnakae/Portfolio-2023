@@ -118,32 +118,32 @@ const Project = ({ title, summary, type, img, link, github }) => {
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className=" mb-6  relative w-full flex items-center justify-between bg-brandPurple px-8 py-12 dark:bg-dark dark:border-light  ">
+    <article className=" mb-6 relative w-full flex items-center bg-brandBlue px-8 py-12 dark:bg-dark dark:border-light  ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
-
-      <div className="h-full flex flex-col items-start justify-between w-1/2 ">
+      <div className="absolute right-0 translate-x-28  rounded-full h-[610px] w-[610px] lg:z-0 bg-brand"></div>
+      <div className="h-full z-3 flex py-12 flex-col items-start justify-between w-1/2 ">
         <span className="text-brand font-medium text-xl dark:text-brandDark xs:text-base">
           {type}
         </span>
         <Link
           href={link}
           target="_blank"
-          className="hover:underline underline-offset-2"
+          className="hover:underline underline-offset-2 my-6"
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-base">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-base">
+        <p className="mb-6 font-medium text-dark dark:text-light sm:text-base lg:text-2xl ">
           {summary}
         </p>
         <div className="mt-2 flex items-center sm:hidden">
           <Link
             href={link}
             target="_blank"
-            className="mr-4 outline rounded-full h-[50px] w-auto  flex items-center  p-2 px-6 text-sm font-semibold dark:bg-dark dark:text-light "
+            className="mr-6 h-[50px] w-auto  flex items-center  text-2xl font-bold dark:bg-dark dark:text-light "
           >
-            DEMO
+            VIEW PROJECT
           </Link>
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -153,7 +153,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 rounded-[10px] cursor-pointer overflow-hidden   "
+        className="w-1/2 md:rounded-[10px] cursor-pointer overflow-hidden  z-10 "
       >
         <FramerImage
           src={img}
@@ -191,7 +191,7 @@ export default function Home() {
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
-              className=" xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl  md:pr-56 lg:pr-44 font-semibold lg:leading-normal md:leading-normal"
+              className=" xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl  md:pr-56 lg:pr-44 font-semibold lg:leading-normal md:leading-normal mb-10"
             />
 
             {/* Button */}
