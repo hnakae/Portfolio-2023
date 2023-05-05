@@ -184,21 +184,21 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className=" flex flex-col  xs:px-4 sm:px-8 md:px-12 lg:px-36 landscape:lg:pt-60 md:pt-64 bg-brandWhite ">
+          <div className=" flex flex-col  xs:px-4 sm:px-8 md:px-12 lg:px-36 landscape:lg:pt-56 md:pt-64 bg-brandWhite ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
               className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-normal mb-10"
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
-              className=" xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl  md:pr-56 lg:pr-44 font-semibold lg:leading-normal md:leading-normal"
+              className=" xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl  md:pr-56 lg:pr-44 font-semibold lg:leading-normal md:leading-normal mb-10"
             />
 
             {/* Button */}
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-10">
               <Link
                 href="/algo"
-                className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandWhite hover:bg-brandDark  md:mb-6 md:mt-12 lg:mt-24 lg:mb-20"
+                className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandWhite hover:bg-brandDark  md:mb-6 md:mt-12 "
               >
                 <span className="text-lg font-bold ">Let's Code</span>
                 <Image
