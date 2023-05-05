@@ -364,15 +364,15 @@ export default function Home() {
             </div>
           </div>
           {/* AWARDS SECTION */}
-          <div className="h-screen bg-brandGray px-40">
+          <div className="h-full bg-brandGray px-40">
             <div className="flex justify-center items-center pt-12">
-              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandPurple mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandBlue2 mx-6"></div>
               <div className="w-[300px] h-[300px] rounded-[10px] bg-white mx-6"></div>
               <div className="w-[300px] h-[300px] rounded-[10px] bg-brandPurple mx-6"></div>
             </div>
 
             {/* Numbers */}
-            <div className=" flex items-center justify-around pt-12">
+            {/* <div className=" flex items-center justify-around pt-12">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={57} />%
@@ -400,15 +400,15 @@ export default function Home() {
                   Games Played
                 </h2>
               </div>
-            </div>
+            </div> */}
 
-            <div className="flex justify-center items-center pt-12">
-              <div className="w-[300px] h-[300px] rounded-[10px] bg-white mx-6"></div>
-              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandPurple mx-6"></div>
-              <div className="w-[300px] h-[300px] rounded-[10px] bg-white mx-6"></div>
+            <div className="flex justify-center items-center py-12">
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brand mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-black border-brandDark border-[5px] mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandWhite mx-6"></div>
             </div>
             {/* Numbers */}
-            <div className=" flex items-center justify-around pt-12">
+            {/* <div className=" flex items-center justify-around pt-12">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={57} />%
@@ -436,7 +436,7 @@ export default function Home() {
                   Games Played
                 </h2>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* FAQ */}
           {/* <div className="h-screen bg-brandWhite">
