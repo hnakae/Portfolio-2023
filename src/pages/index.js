@@ -468,12 +468,12 @@ export default function Home() {
             <div className="flex justify-around p-12">
               <div className="flex flex-col gap-4">
                 <div className="font-bold text-2xl">info@my.agency</div>
-                <div>USA, Eugene Oregon</div>
+                <div className="mb-24">USA, Eugene Oregon</div>
                 <div className="flex  gap-5">
-                  <LinkedInIcon className="w-[30px]" />
-                  <DribbbleIcon className="w-[30px]" />
-                  <PinterestIcon className="w-[30px]" />
-                  <GithubIcon className="w-[30px]" />
+                  <LinkedInIcon className="lg:w-[30px]" />
+                  <DribbbleIcon className="lg:w-[30px]" />
+                  <PinterestIcon className="lg:w-[30px]" />
+                  <GithubIcon className="lg:w-[30px]" />
                 </div>
               </div>
               <div className="flex flex-col gap-4">
