@@ -190,8 +190,8 @@ export default function Home() {
               className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-normal mb-10"
             />
             <AnimatedText
-              text="Hello! I'm Hiro Nakae, a Front-End Software Engineer based in Eugene, Oregon."
-              className=" xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl  md:pr-56 lg:pr-32 font-semibold lg:leading-normal md:leading-normal mb-10"
+              text="Hello! I'm Hiro Nakae, a Software Engineer based in Eugene, Oregon."
+              className=" xs:text-2xl sm:text-3xl md:text-5xl lg:text-6xl  md:pr-32 lg:pr-32 font-semibold lg:leading-normal md:leading-normal mb-10"
             />
 
             {/* Button */}
