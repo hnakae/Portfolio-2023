@@ -103,9 +103,9 @@ const Project = ({ title, summary, type, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className=" text-lg font-semibold underline md:text-base lg:text-lg"
+            className=" text-lg font-bold  md:text-base lg:text-lg"
           >
-            Demo
+            VIEW PROJECT
           </Link>
           {/* <Link href={github} target="_blank" className="w-8 md:w-6">
             <GithubIcon />{" "}
@@ -187,7 +187,7 @@ export default function Home() {
           <div className=" flex flex-col  xs:px-4 sm:px-8 md:px-12 lg:px-36 landscape:lg:pt-56 md:pt-64 bg-brandWhite ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
-              className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-normal mb-10"
+              className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
             />
             <AnimatedText
               text="Hello! I'm Hiro Nakae, a Software Engineer based in Eugene, Oregon."
@@ -195,7 +195,7 @@ export default function Home() {
             />
 
             {/* Button */}
-            <div className="flex justify-center mb-10">
+            {/* <div className="flex justify-center mb-10">
               <Link
                 href="/algo"
                 className="font-semibold border sm:rounded-full border-dark flex justify-center w-[180px] items-center py-4  bg-brandWhite hover:bg-brandDark  md:mb-6 md:mt-12 "
@@ -207,7 +207,7 @@ export default function Home() {
                   className="w-auto h-4 ml-4 "
                 />
               </Link>
-            </div>
+            </div> */}
             {/* ARROW INDICATOR */}
             <div className="font-semibold text-xs lg:text-sm flex justify-center md:mt-6 ">
               <div className="cursor-pointer">VIEW FEATURED PROJECT</div>
@@ -223,8 +223,8 @@ export default function Home() {
           <div className="grid grid-cols-12  px-12 md:px-12 lg:px-20 gap-10 ">
             <div className="col-span-12 md:hidden">
               <FeaturedProject
-                title="Fully Stacked ChatGPT Integration"
-                summary="A full-stack web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, tRPC, Prisma, PlanetScale, Cypress, and Clerk."
+                title="Full Stack App w/ ChatGPT Integration"
+                summary="A fully-stacked web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, tRPC, Prisma, PlanetScale, Cypress, and Clerk."
                 link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
@@ -269,8 +269,8 @@ export default function Home() {
           <div className="flex flex-col md:px-12 lg:px-40 py-16">
             <div className="flex justify-center">
               <AnimatedText
-                text="This is the technology stack that I use on a daily basis."
-                className=" md:text-4xl lg:text-5xl text-center mt-10 mb-32 font-semibold md:leading-normal lg:leading-normal lg:px-44"
+                text="Skills"
+                className=" md:text-4xl lg:text-5xl text-center mt-10 mb-20 font-semibold md:leading-normal lg:leading-normal lg:px-44"
               />
             </div>
             <div className="grid grid-cols-12 gap-10 mb-12">
@@ -364,8 +364,51 @@ export default function Home() {
             </div>
           </div>
           {/* AWARDS SECTION */}
-          <div className="h-screen bg-brandGray">
-            <div className=" flex items-center justify-center ">
+          <div className="h-screen bg-brandGray px-40">
+            <div className="flex justify-center items-center pt-12">
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandPurple mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-white mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandPurple mx-6"></div>
+            </div>
+
+            {/* Numbers */}
+            <div className=" flex items-center justify-around pt-12">
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={57} />%
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  Win Percentage
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={3.83} />
+                  :1
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  KDA
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={292} />
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  Games Played
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex justify-center items-center pt-12">
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-white mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandPurple mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-white mx-6"></div>
+            </div>
+            {/* Numbers */}
+            <div className=" flex items-center justify-around pt-12">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={57} />%
@@ -396,13 +439,13 @@ export default function Home() {
             </div>
           </div>
           {/* FAQ */}
-          <div className="h-screen bg-brandWhite">
+          {/* <div className="h-screen bg-brandWhite">
             <div>Frequently asked questions</div>
-          </div>
+          </div> */}
           {/* Blogs */}
-          <div className="h-screen bg-brandWhite">
+          {/* <div className="h-screen bg-brandWhite">
             <div>Continue reading</div>
-          </div>
+          </div> */}
           {/* Contact section */}
           <div className="flex flex-col bg-neutral-100 md:h-[400px] py-24 lg:px-40">
             <div className="flex justify-center">
@@ -421,7 +464,43 @@ export default function Home() {
             </div>
           </div>
           {/* footer nav */}
-          <div className="h-[455px] bg-brandWhite"></div>
+          <div className="h-[455px] bg-brandWhite">
+            <div className="flex justify-around p-12">
+              <div className="flex flex-col gap-4">
+                <div className="font-bold text-2xl">info@my.agency</div>
+                <div>USA, Eugene Oregon</div>
+                <div className="flex  gap-5">
+                  <LinkedInIcon className="w-[30px]" />
+                  <DribbbleIcon className="w-[30px]" />
+                  <PinterestIcon className="w-[30px]" />
+                  <GithubIcon className="w-[30px]" />
+                </div>
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="font-bold text-2xl">Company</div>
+                <div>Works</div>
+                <div>Services</div>
+                <div>Industries</div>
+                <div>About</div>
+                <div>Blog</div>
+                <div>Contact Us</div>
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="font-bold text-2xl">Services</div>
+                <div>Product Strategy</div>
+                <div>Business Analysis</div>
+                <div>UX Audit</div>
+                <div>UI/UX Design</div>
+                <div>Web Design</div>
+                <div>Brand identity</div>
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="font-bold text-2xl">Solutions</div>
+                <div>For Business</div>
+                <div>For Startups</div>
+              </div>
+            </div>
+          </div>
         </Layout>
       </main>
     </>
