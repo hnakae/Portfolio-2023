@@ -86,6 +86,7 @@ const Project = ({ title, summary, type, img, link, github }) => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
+          as="image"
         />
       </Link>
 
@@ -163,6 +164,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
+          as="image"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
@@ -229,6 +231,7 @@ export default function Home() {
                 link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
+                priority
                 github="https://github.com/hnakae/NewParadigm"
               />
             </div>
@@ -240,6 +243,7 @@ export default function Home() {
                 type="Project"
                 img={project1}
                 github="/"
+                priority
               />
             </div>
             <div className="col-span-6">
