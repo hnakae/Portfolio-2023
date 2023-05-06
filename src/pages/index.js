@@ -71,7 +71,7 @@ const AnimatedNumbers = ({ value }) => {
   return <span ref={ref}></span>;
 };
 
-const Project = ({ title, summary, type, img, link, github }) => {
+const Project = ({ title, summary, type, img, link, github, priority }) => {
   return (
     <article className="w-full  flex-col items-center justify-center rounded-2xl rounded-br-2xl bg-brandBlue py-4 dark:bg-dark dark:border-light relative xs:p-4  ">
       <Link
@@ -85,8 +85,9 @@ const Project = ({ title, summary, type, img, link, github }) => {
           className="w-full h-auto rounded-[10px]"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
-          priority
-          as="image"
+          loading="lazy"
+          // as="image"
+          // width={500}
         />
       </Link>
 
@@ -118,7 +119,15 @@ const Project = ({ title, summary, type, img, link, github }) => {
   );
 };
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({
+  type,
+  title,
+  summary,
+  img,
+  link,
+  github,
+  priority,
+}) => {
   return (
     <article className=" mb-6 relative w- flex items-center bg-brandBlue px-8 py-12 dark:bg-dark dark:border-light  ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
@@ -163,8 +172,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
-          priority
-          as="image"
+          // priority={priority}
+          loading="lazy"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
@@ -187,7 +196,7 @@ export default function Home() {
       <main className="flex items-center min-h-screen ">
         <Layout className="">
           {/* FLEX CONTAINER */}
-          <div className=" flex flex-col  xs:px-4 sm:px-8 md:px-12 lg:px-36 landscape:lg:pt-56 md:pt-64 bg-brandWhite ">
+          <div className=" flex flex-col landscape:lg:min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-36 landscape:lg:pt-56 md:pt-64 bg-brandWhite ">
             <AnimatedText
               text="Frontend Developer | UI/UX Designer"
               className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"
@@ -231,7 +240,7 @@ export default function Home() {
                 link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
-                priority
+                priority={true}
                 github="https://github.com/hnakae/NewParadigm"
               />
             </div>
@@ -242,8 +251,8 @@ export default function Home() {
                 link="/"
                 type="Project"
                 img={project1}
+                priority={true}
                 github="/"
-                priority
               />
             </div>
             <div className="col-span-6">
@@ -329,7 +338,7 @@ export default function Home() {
               </div>
               <div className="col-span-3">
                 <div className="flex justify-center mb-6">
-                  <Image src={skill4} alt="skill" height={65} />
+                  <Image src={skill4} alt="skill" height={65} as="image" />
                 </div>
                 <div className="flex justify-center">
                   <div className="text-2xl font-bold mb-6">Design</div>
@@ -408,11 +417,11 @@ export default function Home() {
               </div>
             </div> */}
 
-            <div className="flex justify-center items-center py-12">
+            {/* <div className="flex justify-center items-center py-12">
               <div className="w-[300px] h-[300px] rounded-[10px] bg-brand mx-6"></div>
               <div className="w-[300px] h-[300px] rounded-[10px] bg-black border-brandDark border-[5px] mx-6"></div>
               <div className="w-[300px] h-[300px] rounded-[10px] bg-brandWhite mx-6"></div>
-            </div>
+            </div> */}
             {/* Numbers */}
             {/* <div className=" flex items-center justify-around pt-12">
               <div className="flex flex-col items-end justify-center">
