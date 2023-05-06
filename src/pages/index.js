@@ -85,6 +85,7 @@ const Project = ({ title, summary, type, img, link, github }) => {
           className="w-full h-auto rounded-[10px]"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          priority
         />
       </Link>
 
@@ -315,6 +316,7 @@ export default function Home() {
                 <div className="flex justify-center">
                   <ul className="text-xl font-semibold text-left">
                     <li className="mb-4">React&nbsp;Query</li>
+                    <li className="mb-4">Jotai</li>
                     <li className="mb-4">tRPC</li>
                     <li className="mb-4">MSSMS</li>
                     <li>AWS&nbsp;S3 </li>

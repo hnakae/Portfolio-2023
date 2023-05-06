@@ -23,7 +23,7 @@ const Logo = () => {
         }}
       >
         <span className="md:block lg:hidden">HN</span>
-        <span className="md:hidden">HiroNakae</span>
+        {/* <span className="md:hidden">HiroNakae</span> */}
       </MotionLink>
     </div>
   );
