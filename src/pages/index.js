@@ -145,7 +145,7 @@ const FeaturedProject = ({
             {title}
           </h2>
         </Link>
-        <p className="mb-6 font-medium text-dark dark:text-light sm:text-base lg:text-2xl ">
+        <p className="mb-6 outline font-medium text-dark dark:text-light sm:text-base lg:text-2xl ">
           {summary}
         </p>
         <div className="mt-2 flex items-center sm:hidden">
@@ -236,7 +236,7 @@ export default function Home() {
             <div className="col-span-12 md:hidden">
               <FeaturedProject
                 title="Full Stack App w/ ChatGPT Integration"
-                summary="A dynamic web application with user authentication and authorization(Clerk/NextAuth), database-driven content(MySQLforEcommerce/MongoDBforCMSorAnalytics), E-commerce functionality(Stripe), Form processing(ReactHookForm/ZOD), and content management(GraphQL/GraphCMS)."
+                summary="*FIX UI* A dynamic app with user (Clerk/NextAuth) auth, database-driven content(MySQLforEcom/MongoDBforCMS), E-commerce functionality(Stripe), Form processing(ReactHookForm/ZOD), and content management(GraphQL/GraphCMS)."
                 link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
@@ -380,10 +380,28 @@ export default function Home() {
           </div>
           {/* AWARDS SECTION */}
           <div className="h-full bg-brandGray px-40">
+            <div className="flex justify-center">
+              <AnimatedText
+                text="Things to do"
+                className=" md:text-4xl lg:text-5xl text-center mt-10 mb-20 font-semibold md:leading-normal lg:leading-normal lg:px-44"
+              />
+            </div>
             <div className="flex justify-center items-center pt-12">
-              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandBlue2 mx-6"></div>
-              <div className="w-[300px] h-[300px] rounded-[10px] bg-white mx-6"></div>
-              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandPurple mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandBlue2 mx-6">
+                <div className="flex justify-center items-center p-4">
+                  break up index/home page into section components
+                </div>
+              </div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-white mx-6">
+                <div className="flex justify-center items-center p-4">
+                  Mobile-first Tailwind
+                </div>
+              </div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandPurple mx-6">
+                <div className="flex justify-center items-center p-4">
+                  useAnimate with Framer Motion
+                </div>
+              </div>
             </div>
 
             {/* Numbers */}
