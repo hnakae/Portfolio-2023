@@ -145,7 +145,7 @@ const FeaturedProject = ({
             {title}
           </h2>
         </Link>
-        <p className="mb-6 outline font-medium text-dark dark:text-light sm:text-base lg:text-2xl ">
+        <p className="mb-6 font-medium text-dark dark:text-light sm:text-base lg:text-2xl ">
           {summary}
         </p>
         <div className="mt-2 flex items-center sm:hidden">
@@ -236,7 +236,7 @@ export default function Home() {
             <div className="col-span-12 md:hidden">
               <FeaturedProject
                 title="Full Stack App w/ ChatGPT Integration"
-                summary="*FIX UI* A dynamic app with user (Clerk/NextAuth) auth, database-driven content(MySQLforEcom/MongoDBforCMS), E-commerce functionality(Stripe), Form processing(ReactHookForm/ZOD), and content management(GraphQL/GraphCMS)."
+                summary="A dynamic app with Clerk Auth, database-driven content(MySQLforEcom) or (MongoDBforCMS), E-commerce functionality(Stripe), Form processing(ReactHookForm/ZOD), and content management(GraphQL/GraphCMS)."
                 link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
