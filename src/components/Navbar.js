@@ -71,8 +71,8 @@ const Navbar = () => {
         <Logo />
         {/* </div> */}
         <nav>
-          <CustomLink href="/works" title="Case Studies" className="mr-4" />
-          <CustomLink href="/about" title="About" className="mx-4" />
+          {/* <CustomLink href="/works" title="Case Studies" className="mr-4" /> */}
+          {/* <CustomLink href="/about" title="About" className="mx-4" /> */}
           {/* <CustomLink href="/blog" title="Blog" className="mx-4" /> */}
           <CustomLink href="/algo" title="Algo" className="mx-4" />
           <CustomLink
@@ -112,7 +112,7 @@ const Navbar = () => {
         >
           <nav className="flex items-center flex-col justify-center">
             {/* <Logo /> */}
-            <CustomMobileLink
+            {/* <CustomMobileLink
               href="/works"
               title="Works"
               className=""
@@ -130,7 +130,7 @@ const Navbar = () => {
               title="Blog"
               className=""
               toggle={handleClick}
-            />
+            /> */}
             <CustomMobileLink
               href="/contact"
               title="Contact"

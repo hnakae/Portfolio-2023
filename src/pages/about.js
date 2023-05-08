@@ -7,7 +7,7 @@ import React, { useEffect, useRef } from "react";
 // import hero from "../../public/images/profil";
 import penguin from "../../public/assets/penguin.jpg";
 import { useMotionValue, useSpring, useInView } from "framer-motion";
-import Skills from "@/components/Skills";
+import SkillsPage from "@/components/SkillsPage";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -123,7 +123,7 @@ experienced product managers, designers, developers, and buisiness analysts."
               </div>
             </div>
           </div>
-          <Skills />
+          <SkillsPage />
           <Experience />
           <Education />
         </Layout>

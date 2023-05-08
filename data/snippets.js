@@ -237,3 +237,103 @@
 {
   /* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" /> */
 }
+
+{
+  /* Numbers */
+}
+{
+  /* <div className=" flex items-center justify-around pt-12">
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={57} />%
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  Win Percentage
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={3.83} />
+                  :1
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  KDA
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={292} />
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  Games Played
+                </h2>
+              </div>
+            </div> */
+}
+
+{
+  /* <div className="flex justify-center items-center py-12">
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brand mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-black border-brandDark border-[5px] mx-6"></div>
+              <div className="w-[300px] h-[300px] rounded-[10px] bg-brandWhite mx-6"></div>
+            </div> */
+}
+{
+  /* Numbers */
+}
+{
+  /* <div className=" flex items-center justify-around pt-12">
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={57} />%
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  Win Percentage
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={3.83} />
+                  :1
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  KDA
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+                  <AnimatedNumbers value={292} />
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  Games Played
+                </h2>
+              </div>
+            </div> */
+}
+// const AnimatedNumbers = ({ value }) => {
+//   const ref = useRef(null);
+
+//   const motionValue = useMotionValue(0);
+//   const springValue = useSpring(motionValue, { duration: 3000 });
+//   const isInView = useInView(ref, { once: true });
+
+//   useEffect(() => {
+//     if (isInView) {
+//       motionValue.set(value);
+//     }
+//   }, [isInView, value, motionValue]);
+
+//   useEffect(() => {
+//     springValue.on("change", (latest) => {
+//       if (ref.current && latest.toFixed(2) <= value) {
+//         ref.current.textContent = latest.toFixed(2);
+//       }
+//     });
+//   }, [springValue, value]);
+
+//   return <span ref={ref}></span>;
+// };
