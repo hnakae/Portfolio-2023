@@ -236,7 +236,7 @@ export default function Home() {
             <div className="col-span-12 md:hidden">
               <FeaturedProject
                 title="Full Stack App w/ ChatGPT Integration"
-                summary="A dynamic web application with user authentication and authorization, database-driven content, E-commerce functionality, Form processing, and content management. Uses Redux for state management and GraphQL for API calls."
+                summary="A dynamic web application with user authentication and authorization(Clerk/NextAuth), database-driven content(MySQLforEcommerce/MongoDBforCMSorAnalytics), E-commerce functionality(Stripe), Form processing(ReactHookForm/ZOD), and content management(GraphQL/GraphCMS)."
                 link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
