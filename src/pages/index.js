@@ -236,7 +236,7 @@ export default function Home() {
             <div className="col-span-12 md:hidden">
               <FeaturedProject
                 title="Full Stack App w/ ChatGPT Integration"
-                summary="A fully-stacked web application using the latest web development technologies including Nextjs, React, TypeScript, Tailwind, tRPC, Prisma, PlanetScale, Cypress, and Clerk."
+                summary="A dynamic web application with user authentication and authorization, database-driven content, E-commerce functionality, Form processing, and content management. Uses Redux for state management and GraphQL for API calls."
                 link="https://new-paradigm.vercel.app/"
                 type="Featured Project"
                 img={project1}
