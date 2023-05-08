@@ -69,8 +69,8 @@ const FeaturedProject = ({
   return (
     <article className=" mb-6 relative w- flex items-center bg-brandBlue px-8 py-12 dark:bg-dark dark:border-light  ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
-      <div className="absolute right-10 translate-x-28  rounded-full h-[690px] w-[690px] lg:z-0 bg-brand"></div>
-      <div className="h-full z-3 flex py-12 flex-col items-start justify-between w-1/3 pr-8 ">
+      <div className="absolute right-10 translate-x-28  rounded-full h-[690px] w-[690px] lg:z-0 bg-brand" />
+      <div className="h-full z-3 flex py-12 flex-col items-start justify-between w-[45%] pr-8 ">
         <span className="text-brand font-medium text-xl dark:text-brandDark xs:text-base">
           {type}
         </span>
@@ -102,7 +102,7 @@ const FeaturedProject = ({
       <Link
         href={link}
         target="_blank"
-        className="w-[60%] translate-x-10 md:rounded-[10px] cursor-pointer overflow-hidden  z-10 "
+        className="w-[55%] md:rounded-[10px] cursor-pointer overflow-hidden  z-10 "
       >
         <FramerImage
           src={img}
