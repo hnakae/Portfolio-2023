@@ -7,7 +7,7 @@ import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon } from "./Icons";
 const Footer = () => {
   return (
     <>
-      <div className="h-[455px] bg-brandWhite">
+      <div className="h-[455px] bg-brandWhite text-dark">
         <div className="flex justify-around p-12">
           <div className="flex flex-col gap-4">
             <div className="font-bold text-2xl">info@my.agency</div>
