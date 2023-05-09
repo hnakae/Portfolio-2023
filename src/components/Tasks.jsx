@@ -1,7 +1,7 @@
 import React from "react";
 import AnimatedText from "./AnimatedText";
 
-const Section = () => {
+const Tasks = () => {
   return (
     <div className="h-full bg-brandGray px-40">
       <div className="flex justify-center">
@@ -47,4 +47,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Tasks;

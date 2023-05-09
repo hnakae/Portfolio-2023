@@ -7,7 +7,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import About from "@/components/About";
-import Section from "@/components/Section";
+import Tasks from "@/components/Tasks";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
           <Projects />
           <Skills />
           <About />
-          <Section />
+          <Tasks />
           <Contact />
         </Layout>
       </main>

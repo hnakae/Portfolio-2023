@@ -2,6 +2,8 @@ import React from "react";
 import project1 from "../../public/images/wordpress.jpg";
 import project2 from "../../public/images/mintyswap.jpg";
 import project3 from "../../public/images/qtalent.jpg";
+import project4 from "../../public/images/sage-mobile.jpg";
+import project5 from "../../public/images/klasha-mobile.jpg";
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
 import { motion } from "framer-motion";
@@ -161,6 +163,26 @@ const Projects = () => {
           link="/"
           type="Project"
           img={project3}
+          github="/"
+        />
+      </div>
+      <div className="col-span-6">
+        <Project
+          title="To Do List"
+          summary="Next.js + PostgreSQL + React Hook Form + CRUD"
+          link="/"
+          type="Project"
+          img={project4}
+          github="/"
+        />
+      </div>
+      <div className="col-span-6">
+        <Project
+          title="E-Commerce App"
+          summary="GraphQL + Redux + Typescript + Cypress"
+          link="/"
+          type="Project"
+          img={project5}
           github="/"
         />
       </div>

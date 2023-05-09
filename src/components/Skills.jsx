@@ -24,11 +24,11 @@ const Skills = () => {
             <div className="text-2xl font-bold mb-6">Languages</div>
           </div>
           <div className="flex justify-center">
-            <ul className="text-xl font-semibold text-left ">
-              <li className="mb-4">JavaScript&nbsp;(ES6)</li>
-              <li className="mb-4">TypeScript</li>
-              <li className="mb-4">HTML</li>
-              <li>CSS/Sass</li>
+            <ul className="text-xl font-semibold text-left space-y-4">
+              <li>TypeScript</li>
+              <li>JavaScript&nbsp;(ES6)</li>
+              <li>HTML/CSS</li>
+              <li></li>
             </ul>
           </div>
         </div>
@@ -40,10 +40,10 @@ const Skills = () => {
             <div className="text-2xl font-bold mb-6">Frameworks</div>
           </div>
           <div className="flex justify-center">
-            <ul className="text-xl font-semibold text-left">
-              <li className="mb-4">Next</li>
-              <li className="mb-4">React</li>
+            <ul className="text-xl font-semibold text-left space-y-4">
+              <li>Next</li>
               <li>Tailwind&nbsp;CSS</li>
+              <li>React</li>
             </ul>
           </div>
         </div>
@@ -55,12 +55,11 @@ const Skills = () => {
             <div className="text-2xl font-bold mb-6">Tools</div>
           </div>
           <div className="flex justify-center">
-            <ul className="text-xl font-semibold text-left">
-              <li className="mb-4">React&nbsp;Query</li>
-              <li className="mb-4">Jotai</li>
-              <li className="mb-4">tRPC</li>
-              <li className="mb-4">MSSMS</li>
-              <li>AWS&nbsp;S3 </li>
+            <ul className="text-xl font-semibold text-left space-y-4">
+              <li>Redux</li>
+              <li>PostgreSQL</li>
+              <li>Apollo&nbsp;GraphQL</li>
+              <li>Cypress</li>
             </ul>
           </div>
         </div>
@@ -72,10 +71,10 @@ const Skills = () => {
             <div className="text-2xl font-bold mb-6">Design</div>
           </div>
           <div className="flex justify-center">
-            <ul className="text-xl font-semibold text-left">
-              <li className="mb-4">Figma</li>
-              <li className="mb-4">Wireframing</li>
-              <li className="mb-4">Prototyping</li>
+            <ul className="text-xl font-semibold text-left space-y-4">
+              <li>Figma</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
               <li>Mockup</li>
             </ul>
           </div>
