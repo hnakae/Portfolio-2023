@@ -4,7 +4,7 @@ import project2 from "../../public/images/mintyswap.jpg";
 import project3 from "../../public/images/qtalent.jpg";
 import project4 from "../../public/images/sage-mobile.jpg";
 import project5 from "../../public/images/klasha-mobile.jpg";
-import project6 from "../../public/images/hugo-blog.08743dce.PNG";
+import project6 from "../../public/images/hugo-blog.PNG";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
@@ -194,7 +194,7 @@ const Projects = () => {
           summary="Hugo + Tailwindcss"
           link="https://github.eugenego.club/"
           type="Project"
-          img={project6}
+          img={project1}
           github="/"
         />
       </div>
