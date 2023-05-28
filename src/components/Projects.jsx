@@ -4,7 +4,7 @@ import project2 from "../../public/images/mintyswap.jpg";
 import project3 from "../../public/images/qtalent.jpg";
 import project4 from "../../public/images/sage-mobile.jpg";
 import project5 from "../../public/images/klasha-mobile.jpg";
-import project6 from "../../public/images/hugo-blog.PNG";
+import project6 from "../../public/images/hugo-blog.png";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
@@ -191,7 +191,7 @@ const Projects = () => {
       <div className="col-span-6">
         <Project
           title="Static Hugo Website"
-          summary="Hugo + Tailwindcss + Markdown"
+          summary="Hugo + Tailwindcss"
           link="https://github.eugenego.club/"
           type="Project"
           img={project6}
