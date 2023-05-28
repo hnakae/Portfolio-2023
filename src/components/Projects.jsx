@@ -4,6 +4,8 @@ import project2 from "../../public/images/mintyswap.jpg";
 import project3 from "../../public/images/qtalent.jpg";
 import project4 from "../../public/images/sage-mobile.jpg";
 import project5 from "../../public/images/klasha-mobile.jpg";
+import project6 from "../../public/images/hugo-blog.PNG";
+
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
 import { motion } from "framer-motion";
@@ -22,7 +24,7 @@ const Project = ({ title, summary, type, img, link, github, priority }) => {
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto rounded-[10px]"
+          className="w-full h-auto rounded-[10px] px-4"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           loading="lazy"
@@ -44,9 +46,9 @@ const Project = ({ title, summary, type, img, link, github, priority }) => {
         </Link>
         <div className="w-full mt-2 flex items-center justify-start">
           <Link
-            href={link}
+            href="https://github.com/Eugene-Go-Club/Eugene-Go-Club.github.io"
             target="_blank"
-            className=" text-lg font-bold  md:text-base lg:text-lg"
+            className=" text-lg font-bold  md:text-base lg:text-lg cursor:pointer hover:-translate-y-0.5"
           >
             VIEW PROJECT
           </Link>
@@ -135,7 +137,7 @@ const Projects = () => {
           github="https://github.com/hnakae/NewParadigm"
         />
       </div>
-      <div className="col-span-6 md:block lg:hidden">
+      {/* <div className="col-span-6 md:block lg:hidden">
         <Project
           title="Fully Stacked Web Application"
           summary="Tool with ChatGPT Integration"
@@ -145,8 +147,8 @@ const Projects = () => {
           priority={true}
           github="/"
         />
-      </div>
-      <div className="col-span-6">
+      </div> */}
+      {/* <div className="col-span-6">
         <Project
           title="UI/UX"
           summary="Pixel Perfect Design"
@@ -183,6 +185,16 @@ const Projects = () => {
           link="/"
           type="Project"
           img={project5}
+          github="/"
+        />
+      </div> */}
+      <div className="col-span-6">
+        <Project
+          title="Static Hugo Website"
+          summary="Hugo + Tailwindcss + Markdown"
+          link="https://github.eugenego.club/"
+          type="Project"
+          img={project6}
           github="/"
         />
       </div>

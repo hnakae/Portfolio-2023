@@ -21,7 +21,7 @@ const About = () => {
             interesting topics such as: API development with tRPC, and React
             State Management with tools like React Query. State management
             frameworks and API access libraries are something new to me and I'm
-            excited to learn more about them.""
+            excited to learn more about them."
           </div>
         </div>
       </div>
