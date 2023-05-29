@@ -196,6 +196,7 @@ const Projects = () => {
           type="Project"
           img={project6}
           github="/"
+          priority
         />
       </div>
       <div className="col-span-6 bg-brandBlue hover:bg-brandPurple rounded-[10px]">
