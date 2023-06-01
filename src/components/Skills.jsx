@@ -28,7 +28,7 @@ const Skills = () => {
               <li>TypeScript</li>
               <li>JavaScript&nbsp;(ES6)</li>
               <li>HTML/CSS</li>
-              <li></li>
+              <li>Python</li>
             </ul>
           </div>
         </div>
@@ -56,9 +56,10 @@ const Skills = () => {
           </div>
           <div className="flex justify-center">
             <ul className="text-xl font-semibold text-left space-y-4">
-              <li>Redux</li>
+              {/* <li>Redux</li> */}
               <li>PostgreSQL</li>
-              <li>Apollo&nbsp;GraphQL</li>
+              <li>Prisma</li>
+              {/* <li>Apollo&nbsp;GraphQL</li> */}
               <li>Cypress</li>
             </ul>
           </div>
