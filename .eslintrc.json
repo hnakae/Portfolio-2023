@@ -1,4 +1,5 @@
 {
-  "extends": ["next/babel", "next/core-web-vitals"]
+  // "extends": ["node_modules/eslint-config-next/babel"]
+  "extends": ["next/core-web-vitals"]
   // "extends": ["next", "next/babel", "next/core-web-vitals"]
 }

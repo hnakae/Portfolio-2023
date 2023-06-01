@@ -3,7 +3,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 import Head from "next/head";
 import React, { useRef, useState } from "react";
 
-const algo = () => {
+const Algo = () => {
   const input = useRef();
   const [output, setOutput] = useState("");
 
@@ -85,4 +85,4 @@ const algo = () => {
   );
 };
 
-export default algo;
+export default Algo;

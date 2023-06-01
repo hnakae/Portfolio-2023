@@ -16,7 +16,7 @@ const Contact = () => {
           href="/contact"
           className="font-semibold z-20 text-white bg-red-400  hover:bg-black hover:text-brandWhite  flex justify-center w-[180px] items-center py-4   mb-24 sm:rounded-full"
         >
-          <div className="text-lg font-bold ">Let's Talk!</div>
+          <div className="text-lg font-bold ">Let&apos;s Talk!</div>
         </Link>
       </div>
     </div>

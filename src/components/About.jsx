@@ -17,11 +17,11 @@ const About = () => {
         </div>
         <div className="flex justify-center my-8">
           <div className="text-xl font-medium text-center rounded-[10px] w-[auto] h-[auto] px-4 py-6  mx-8">
-            "Hi there! My name is Hiro Nakae and I'm currently looking into some
-            interesting topics such as: API development with tRPC, and React
-            State Management with tools like React Query. State management
-            frameworks and API access libraries are something new to me and I'm
-            excited to learn more about them."
+            &quot;Hi there! My name is Hiro Nakae and I&apos;m currently looking
+            into some interesting topics such as: API development with tRPC, and
+            React State Management with tools like React Query. State management
+            frameworks and API access libraries are something new to me and
+            I&apos;m excited to learn more about them.&quot;
           </div>
         </div>
       </div>

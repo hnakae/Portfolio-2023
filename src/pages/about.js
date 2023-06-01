@@ -69,17 +69,17 @@ experienced product managers, designers, developers, and buisiness analysts."
                 Biography
               </h2>
               <p className="font-medium">
-                Hi there. I'm Hiro, a web developer based in Eugene with a
+                Hi there. I&apos;m Hiro, a web developer based in Eugene with a
                 passion for building digital experiences on the web.
               </p>
               <p className="my-4 font-medium">
                 If you want to improve, redesign, or build your website from
-                scratch, I'm your guy!
+                scratch, I&apos;m your guy!
               </p>
 
               <p className="font-medium">
-                Take a look at my works to see the latest projects I've worked
-                on.
+                Take a look at my works to see the latest projects I&apos;ve
+                worked on.
               </p>
             </div>
 

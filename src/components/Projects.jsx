@@ -1,10 +1,10 @@
 import React from "react";
-import project0 from "../../public/images/analytics.PNG";
-import project1 from "../../public/images/wordpress.jpg";
-import project2 from "../../public/images/mintyswap.jpg";
-import project3 from "../../public/images/qtalent.jpg";
-import project4 from "../../public/images/sage-mobile.jpg";
-import project5 from "../../public/images/klasha-mobile.jpg";
+import project0 from "../../public/images/projects/analytics.png";
+// import project1 from "../../public/images/wordpress.jpg";
+// import project2 from "../../public/images/mintyswap.jpg";
+// import project3 from "../../public/images/qtalent.jpg";
+// import project4 from "../../public/images/sage-mobile.jpg";
+// import project5 from "../../public/images/klasha-mobile.jpg";
 import project6 from "../../public/images/blogs/hugo-blog.png";
 
 import Link from "next/link";
