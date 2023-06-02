@@ -5,7 +5,7 @@ import { arrow_down } from "react-icons-kit/ikons/arrow_down";
 
 const Hero = () => {
   return (
-    <div className=" flex flex-col landscape:lg:min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-36 landscape:lg:pt-56 md:pt-64 bg-brandWhite ">
+    <div className=" flex flex-col landscape:lg:min-h-screen xs:px-4 sm:px-8 md:px-12 lg:px-36 landscape:lg:pt-56 md:pt-64 bg-brandWhite pt-56">
       <AnimatedText
         text="Frontend Developer | UI/UX Designer"
         className=" xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium mb-10"

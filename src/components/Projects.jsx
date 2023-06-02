@@ -190,7 +190,7 @@ const FeaturedProject2 = ({
 const Projects = () => {
   return (
     <div className="grid grid-cols-12  px-12 md:px-12 lg:px-20 gap-10 ">
-      <div className="col-span-12 md:hidden">
+      <div className="col-span-12">
         <FeaturedProject1
           title="Go Game Analytics"
           summary="A dashboard that provides visual analytics and performance data to go players, aimed at improving gaming performance."
@@ -201,7 +201,7 @@ const Projects = () => {
           github="https://github.com/hnakae/SaaS"
         />
       </div>
-      <div className="col-span-12 md:hidden">
+      <div className="col-span-12 ">
         <FeaturedProject2
           title="Eugene Go Club"
           summary="Game Record Archive"
