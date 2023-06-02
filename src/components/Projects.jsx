@@ -1,5 +1,5 @@
 import React from "react";
-import project0 from "../../public/images/projects/analytics.png";
+import project0 from "../../public/images/projects/go-analytics.png";
 // import project1 from "../../public/images/wordpress.jpg";
 // import project2 from "../../public/images/mintyswap.jpg";
 // import project3 from "../../public/images/qtalent.jpg";
@@ -74,7 +74,7 @@ const FeaturedProject1 = ({
   return (
     <article className=" mb-6 relative w- flex items-center bg-brandBlue px-8 py-12 dark:bg-dark dark:border-light  ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
-      <div className="absolute right-10 translate-x-28  rounded-full h-[620px] w-[620px] lg:z-0 bg-brand" />
+      <div className="absolute right-10 translate-x-28  rounded-full h-[620px] w-[620px] lg:z-0 bg-violet-400" />
       <div className="h-full z-3 flex py-12 flex-col items-start justify-between w-[45%] pr-8 ">
         <span className="text-brand font-medium text-xl dark:text-brandDark xs:text-base">
           {type}
@@ -153,7 +153,7 @@ const FeaturedProject2 = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
-      <div className="absolute left-10 -translate-x-28  rounded-full h-[620px] w-[620px] z-0 bg-violet-300" />
+      <div className="absolute left-10 -translate-x-28  rounded-full h-[620px] w-[620px] z-0 bg-brand" />
       <div className="h-full z-3 flex py-12 flex-col items-end justify-between w-[45%] pr-8 ">
         <span className="text-brand font-medium text-xl dark:text-brandDark xs:text-base">
           {type}
@@ -194,22 +194,22 @@ const Projects = () => {
         <FeaturedProject1
           title="Go Game Analytics"
           summary="A dashboard that provides visual analytics and performance data to go players, aimed at improving gaming performance."
-          link="https://new-paradigm.vercel.app/"
+          link="https://my-product-three.vercel.app/"
           type="Featured Project"
           img={project0}
           priority={true}
-          github="https://github.com/hnakae/NewParadigm"
+          github="https://github.com/hnakae/SaaS"
         />
       </div>
       <div className="col-span-12 md:hidden">
         <FeaturedProject2
           title="Eugene Go Club"
-          summary=""
-          link="https://new-paradigm.vercel.app/"
+          summary="Game Record Archive"
+          link="https://github.eugenego.club/"
           type="Project"
           img={project6}
           priority={true}
-          github="https://github.com/hnakae/NewParadigm"
+          github="https://github.com/Eugene-Go-Club/Eugene-Go-Club.github.io"
         />
       </div>
     </div>
