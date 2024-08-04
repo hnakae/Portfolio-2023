@@ -1,6 +1,6 @@
 import React from "react";
 import project0 from "../../public/images/projects/go-analytics.png";
-import goClub from "../../public/images/projects/go-club.png";
+import goClub from "/images/projects/go-club.png";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
