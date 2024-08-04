@@ -6,7 +6,7 @@ import project0 from "../../public/images/projects/go-analytics.png";
 // import project4 from "../../public/images/sage-mobile.jpg";
 // import project5 from "../../public/images/klasha-mobile.jpg";
 // import project6 from "../../public/images/blogs/hugo-blog.png";
-import goClub from "../../public/images/projects/go-club.PNG";
+import goClub from "../../public/images/projects/go-club.png";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
