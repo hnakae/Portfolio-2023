@@ -1,6 +1,6 @@
 import React from "react";
 import project0 from "../../public/images/projects/go-analytics.png";
-import goClub from "/images/projects/go-club.png";
+// import goClub from "/images/projects/go-club.png";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
@@ -195,7 +195,7 @@ const Projects = () => {
           summary="Freelance project for the Eugene branch of the AGA (American Go Association)"
           link="https://www.eugenego.club/"
           type="Project"
-          img={goClub}
+          img="/images/projects/go-club.PNG"
           priority={true}
           github="https://github.com/hnakae/go-club"
         />
