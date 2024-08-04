@@ -1,5 +1,5 @@
 import React from "react";
-import project0 from "../../public/images/projects/go-analytics.png";
+// import project0 from "../../public/images/projects/go-analytics.png";
 // import project1 from "../../public/images/wordpress.jpg";
 // import project2 from "../../public/images/mintyswap.jpg";
 // import project3 from "../../public/images/qtalent.jpg";
@@ -110,12 +110,14 @@ const FeaturedProject1 = ({
         target="_blank"
         className="w-[55%] md:rounded-[10px] cursor-pointer overflow-hidden  z-10 "
       >
-        <FramerImage
+        <Image
           src={img}
+          width={200}
+          height={200}
           alt={title}
-          className="w-full h-auto"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
+          className="w-full h-auto hover:scale-105 transition-all "
+          // whileHover={{ scale: 1.05 }}
+          // transition={{ duration: 0.2 }}
           // priority={priority}
           loading="lazy"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
@@ -210,7 +212,7 @@ const Projects = () => {
           type="Project"
           img="/images/projects/go-club.png"
           priority={true}
-          github="https://github.com/Eugene-Go-Club/Eugene-Go-Club.github.io"
+          github="https://github.com/hnakae/go-club"
         />
       </div>
     </div>
