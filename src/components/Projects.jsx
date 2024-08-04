@@ -6,7 +6,7 @@ import project0 from "../../public/images/projects/go-analytics.png";
 // import project4 from "../../public/images/sage-mobile.jpg";
 // import project5 from "../../public/images/klasha-mobile.jpg";
 // import project6 from "../../public/images/blogs/hugo-blog.png";
-import goClub from "../../public/images/projects/go-club.png";
+// import goClub from "/images/projects/go-club.png";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
@@ -208,7 +208,7 @@ const Projects = () => {
           summary="Freelance project for the Eugene branch of the AGA (American Go Association)"
           link="https://www.eugenego.club/"
           type="Project"
-          img={goClub}
+          img="/images/projects/go-club.png"
           priority={true}
           github="https://github.com/Eugene-Go-Club/Eugene-Go-Club.github.io"
         />
