@@ -5,7 +5,8 @@ import project0 from "../../public/images/projects/go-analytics.png";
 // import project3 from "../../public/images/qtalent.jpg";
 // import project4 from "../../public/images/sage-mobile.jpg";
 // import project5 from "../../public/images/klasha-mobile.jpg";
-import project6 from "../../public/images/blogs/hugo-blog.png";
+// import project6 from "../../public/images/blogs/hugo-blog.png";
+import goClub from "../../public/images/projects/go-club.PNG";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
@@ -190,7 +191,7 @@ const FeaturedProject2 = ({
 const Projects = () => {
   return (
     <div className="grid grid-cols-12  px-12 md:px-12 lg:px-20 gap-10 ">
-      <div className="col-span-12">
+      {/* <div className="col-span-12">
         <FeaturedProject1
           title="Go Game Analytics"
           summary="A dashboard that provides visual analytics and performance data to go players, aimed at improving gaming performance."
@@ -200,14 +201,14 @@ const Projects = () => {
           priority={true}
           github="https://github.com/hnakae/SaaS"
         />
-      </div>
+      </div> */}
       <div className="col-span-12 ">
-        <FeaturedProject2
+        <FeaturedProject1
           title="Eugene Go Club"
-          summary="Game Record Archive"
-          link="https://github.eugenego.club/"
+          summary="Freelance project for the Eugene branch of the AGA (American Go Association)"
+          link="https://www.eugenego.club/"
           type="Project"
-          img={project6}
+          img={goClub}
           priority={true}
           github="https://github.com/Eugene-Go-Club/Eugene-Go-Club.github.io"
         />
