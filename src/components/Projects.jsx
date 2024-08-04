@@ -1,19 +1,13 @@
 import React from "react";
 import project0 from "../../public/images/projects/go-analytics.png";
-// import project1 from "../../public/images/wordpress.jpg";
-// import project2 from "../../public/images/mintyswap.jpg";
-// import project3 from "../../public/images/qtalent.jpg";
-// import project4 from "../../public/images/sage-mobile.jpg";
-// import project5 from "../../public/images/klasha-mobile.jpg";
-// import project6 from "../../public/images/blogs/hugo-blog.png";
 import goClub from "../../public/images/projects/go-club.png";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Image from "next/image";
 
-const FramerImage = motion(Image);
+// const FramerImage = motion(Image);
 
 const Project = ({ title, summary, type, img, link, github, priority }) => {
   return (
@@ -23,7 +17,7 @@ const Project = ({ title, summary, type, img, link, github, priority }) => {
         target="_blank"
         className="w-full cursor-pointer overflow-hidden "
       >
-        <FramerImage
+        {/* <Image
           src={img}
           alt={title}
           className="w-full h-auto rounded-[10px] px-4"
@@ -32,7 +26,7 @@ const Project = ({ title, summary, type, img, link, github, priority }) => {
           loading="lazy"
           // as="image"
           // width={500}
-        />
+        /> */}
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4 px-4 pb-4 ">
