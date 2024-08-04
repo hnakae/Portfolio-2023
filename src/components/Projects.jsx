@@ -1,12 +1,12 @@
 import React from "react";
-// import project0 from "../../public/images/projects/go-analytics.png";
+import project0 from "../../public/images/projects/go-analytics.png";
 // import project1 from "../../public/images/wordpress.jpg";
 // import project2 from "../../public/images/mintyswap.jpg";
 // import project3 from "../../public/images/qtalent.jpg";
 // import project4 from "../../public/images/sage-mobile.jpg";
 // import project5 from "../../public/images/klasha-mobile.jpg";
 // import project6 from "../../public/images/blogs/hugo-blog.png";
-// import goClub from "/images/projects/go-club.png";
+import goClub from "../../public/images/projects/go-club.png";
 
 import Link from "next/link";
 import { GithubIcon } from "./Icons";
@@ -112,15 +112,15 @@ const FeaturedProject1 = ({
       >
         <Image
           src={img}
-          width={200}
-          height={200}
+          width={400}
+          height={400}
           alt={title}
           className="w-full h-auto hover:scale-105 transition-all "
           // whileHover={{ scale: 1.05 }}
           // transition={{ duration: 0.2 }}
           // priority={priority}
-          loading="lazy"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          priority
+          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
     </article>
@@ -145,15 +145,17 @@ const FeaturedProject2 = ({
         target="_blank"
         className="w-[55%] md:rounded-[10px] cursor-pointer overflow-hidden  z-10 "
       >
-        <FramerImage
+        <Image
           src={img}
+          width={400}
+          height={400}
           alt={title}
-          className="w-full h-auto"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
+          className="w-full h-auto hover:scale-105 transition-all "
+          // whileHover={{ scale: 1.05 }}
+          // transition={{ duration: 0.2 }}
           // priority={priority}
-          loading="lazy"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          priority
+          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
       <div className="absolute left-10 -translate-x-28  rounded-full h-[620px] w-[620px] z-0 bg-brand" />
@@ -193,8 +195,19 @@ const FeaturedProject2 = ({
 const Projects = () => {
   return (
     <div className="grid grid-cols-12  px-12 md:px-12 lg:px-20 gap-10 ">
-      {/* <div className="col-span-12">
+      <div className="col-span-12 ">
         <FeaturedProject1
+          title="Eugene Go Club"
+          summary="Freelance project for the Eugene branch of the AGA (American Go Association)"
+          link="https://www.eugenego.club/"
+          type="Project"
+          img={goClub}
+          priority={true}
+          github="https://github.com/hnakae/go-club"
+        />
+      </div>
+      <div className="col-span-12">
+        <FeaturedProject2
           title="Go Game Analytics"
           summary="A dashboard that provides visual analytics and performance data to go players, aimed at improving gaming performance."
           link="https://my-product-three.vercel.app/"
@@ -202,17 +215,6 @@ const Projects = () => {
           img={project0}
           priority={true}
           github="https://github.com/hnakae/SaaS"
-        />
-      </div> */}
-      <div className="col-span-12 ">
-        <FeaturedProject1
-          title="Eugene Go Club"
-          summary="Freelance project for the Eugene branch of the AGA (American Go Association)"
-          link="https://www.eugenego.club/"
-          type="Project"
-          img="/images/projects/go-club.png"
-          priority={true}
-          github="https://github.com/hnakae/go-club"
         />
       </div>
     </div>
