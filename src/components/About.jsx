@@ -16,12 +16,14 @@ const About = () => {
           </div>
         </div>
         <div className="flex justify-center my-8">
-          <div className="text-xl font-medium text-center rounded-[10px] w-[auto] h-[auto] px-4 py-6  mx-8">
-            &quot;Hi there! My name is Hiro Nakae and I&apos;m currently looking
-            into some interesting topics such as: API development with tRPC, and
-            React State Management with tools like React Query. State management
-            frameworks and API access libraries are something new to me and
-            I&apos;m excited to learn more about them.&quot;
+          <div className="text-xl font-medium text-center rounded-[10px] w-[auto] h-[auto] px-6 py-6 mx-8 leading-relaxed space-y-3">
+            <>
+              Hi there! I&apos;m Hiro Nakae, a senior CS student at the University of Oregon who loves turning ideas
+              into products people actually use.
+            </>
+            <p>
+              I&apos;m currently looking for roles where I can ship polished web experiences, collaborate closely with design, and keep learning from great teams.
+            </p>
           </div>
         </div>
       </div>

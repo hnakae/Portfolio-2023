@@ -69,7 +69,7 @@ const FeaturedProject1 = ({
   return (
     <article className=" mb-6 relative w- flex items-center bg-brandBlue px-8 py-12 dark:bg-dark dark:border-light  ">
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" /> */}
-      <div className="absolute right-10 translate-x-28  rounded-full h-[620px] w-[620px] lg:z-0 bg-violet-400" />
+      <div className="pointer-events-none absolute right-10 translate-x-28 rounded-full bg-violet-400 lg:z-0 h-[clamp(260px,55vw,620px)] w-[clamp(260px,55vw,620px)]" />
       <div className="h-full z-3 flex py-12 flex-col items-start justify-between w-[45%] pr-8 ">
         <span className="text-brand font-medium text-xl dark:text-brandDark xs:text-base">
           {type}
@@ -152,8 +152,8 @@ const FeaturedProject2 = ({
           // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
-      <div className="absolute left-10 -translate-x-28  rounded-full h-[620px] w-[620px] z-0 bg-brand" />
-      <div className="h-full z-3 flex py-12 flex-col items-end justify-between w-[45%] pr-8 ">
+      <div className="pointer-events-none absolute left-10 -translate-x-28 rounded-full bg-brand z-0 h-[clamp(260px,55vw,620px)] w-[clamp(260px,55vw,620px)]" />
+      <div className="h-full z-3 flex py-12 flex-col items-start justify-between w-[45%] pr-8 pl-10 lg:pl-12 md:pl-8">
         <span className="text-brand font-medium text-xl dark:text-brandDark xs:text-base">
           {type}
         </span>
@@ -162,11 +162,11 @@ const FeaturedProject2 = ({
           target="_blank"
           className="hover:underline underline-offset-2 my-6 "
         >
-          <h2 className="my-2 w-full text-right text-4xl font-bold dark:text-light sm:text-base">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-base">
             {title}
           </h2>
         </Link>
-        <p className="mb-6 font-medium text-dark dark:text-light sm:text-base lg:text-2xl ">
+        <p className="mb-6 text-left font-medium text-dark dark:text-light sm:text-base lg:text-2xl ">
           {summary}
         </p>
         <div className="mt-2 flex items-center sm:hidden">

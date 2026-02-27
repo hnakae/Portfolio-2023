@@ -9,6 +9,17 @@ module.exports = {
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        sm: "568px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1124px",
+        "2xl": "1124px",
+      },
+    },
     extend: {
       fontFamily: {
         // gordita: ["var(--font-gordita)", ...fontFamily.sans],
@@ -59,22 +70,12 @@ module.exports = {
       },
     },
     screens: {
-      // "2xl": { max: "1535px" },
-      // => @media (max-width: 1535px) { ... }
-
-      // xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
-      lg: { max: "1366px" },
-      // => @media (max-width: 1023px) { ... }
-
-      md: { max: "1024px" },
-      // => @media (max-width: 767px) { ... }
-
-      sm: { max: "768px" },
-      // => @media (max-width: 639px) { ... }
-
-      xs: { max: "568px" },
-      // => @media (max-width: 479px) { ... }
+      xs: "480px",
+      sm: "568px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1124px",
+      "2xl": "1124px",
     },
   },
   plugins: [],
