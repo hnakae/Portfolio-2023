@@ -1,5 +1,5 @@
 import React from "react";
-import project0 from "../../public/images/projects/go-analytics.png";
+import project0 from "../../public/images/projects/task-orchestrator.webp";
 // import goClub from "/images/projects/go-club.png";
 
 import Link from "next/link";
@@ -202,13 +202,13 @@ const Projects = () => {
       </div>
       <div className="col-span-12">
         <FeaturedProject2
-          title="Go Game Analytics"
-          summary="A dashboard that provides visual analytics and performance data to go players, aimed at improving gaming performance."
-          link="https://my-product-three.vercel.app/"
+          title="AI-assisted Task Orchestrator"
+          summary="A dashboard that provides a way to break down big goals into tasks that can be accomplished in 25 minute increments, aimed at improving time management and productivity."
+          link="https://task-orchestrator-peach.vercel.app/"
           type="Featured Project"
           img={project0}
           priority={true}
-          github="https://github.com/hnakae/SaaS"
+          github="https://github.com/hnakae/Task-Orchestrator"
         />
       </div>
     </div>
